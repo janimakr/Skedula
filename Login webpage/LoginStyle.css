@@ -5,14 +5,14 @@ body{
     background: url(ProfileBG.jpg);
     background-size:cover;
     background-position: center;
-    font-family: sans-serif;
+    font-family: Roboto;
 }
 /*defining the features of login box*/
 .loginbox{
     width: 300px;
     height: 380px;
-    background: #000000;
-    color: #fff;
+    background :rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(254, 254, 255), alpha);
+        color: #2f9599;
     top: 50%;
     left: 50%;
             
@@ -22,12 +22,13 @@ body{
 }
 /*defining the feature of grocery logo*/
 .groceryLogo{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     position: relative;
-    top: -50px;/*pushing the logo a bit top*/
-    left: calc(50% - 50px);
+    bottom: -10;
+    
+    left: calc(43% - 50px);
 }
 
 /*defining featurs of contents inside the login box*/
@@ -58,7 +59,7 @@ form{
     background: transparent;
     outline: none;
     height: 40px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 16px;
 }
 .loginbox input[type="submit"]
@@ -66,7 +67,7 @@ form{
     border: none;
     outline: none;
     height: 40px;
-    background: #fb2525;
+    background: #2f9599;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -74,7 +75,8 @@ form{
 .loginbox input[type="submit"]:hover
 {
     cursor: pointer;
-    background: #ffc107;
+    background: 
+rgb(93,188,210);
     color: #000;
 }
 
