@@ -12,7 +12,11 @@ body{
     width: 300px;
     height: 380px;
     background :rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(254, 254, 255), alpha);
+<<<<<<< HEAD
         color: #2f9599;
+=======
+    color: #2f9599;
+>>>>>>> 1df2eb881cd3911ef231593598390d7f59be2f65
     top: 50%;
     left: 50%;
             
@@ -20,19 +24,27 @@ body{
     transform: translate(-50%,-50%);
     box-sizing: border-box;
 }
+<<<<<<< HEAD
 /*defining the feature of grocery logo*/
 .groceryLogo{
+=======
+/*defining the features of logo*/
+.Logo{
+>>>>>>> 1df2eb881cd3911ef231593598390d7f59be2f65
     width: 150px;
     height: 150px;
     border-radius: 50%;
     position: relative;
     bottom: -10;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 1df2eb881cd3911ef231593598390d7f59be2f65
     left: calc(43% - 50px);
 }
 
 /*defining featurs of contents inside the login box*/
-/*Login here*/
+/*Welcome*/
 h1{
     margin: -20px;
     padding: 0 0 20px;
@@ -75,6 +87,7 @@ form{
 .loginbox input[type="submit"]:hover
 {
     cursor: pointer;
+<<<<<<< HEAD
     background: 
 rgb(93,188,210);
     color: #000;
@@ -126,6 +139,8 @@ rgb(93,188,210);
 {
     cursor: pointer;
     background: #008000;
+=======
+    background:rgb(93,188,210);
+>>>>>>> 1df2eb881cd3911ef231593598390d7f59be2f65
     color: #000;
 }
-
