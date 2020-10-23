@@ -71,3 +71,10 @@ body {
     background: #42d1f5;
     color: #000;
 }
+p
+{
+    color: #04614a;
+    font-family: ROBOTO;
+    font-size: 18px;
+    border-radius: 120px;
+}
