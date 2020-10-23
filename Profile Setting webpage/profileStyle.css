@@ -1,22 +1,22 @@
 
 body {
-    background: url(profileBG.jpg);
-    background-position: center;
+    background: url(bg2.jpg);
+    background-position: center ;
   }
 
 .ProfileSettings{
-    font-family: sans-serif;
-    width:1050px;
+    font-family: ROBOTO;
+    width:900px;
     margin:30px auto;
     background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
     border-radius: 10px;
 }
 .form-header  {
-    background-color: #45464756;
+    background-color: #1BBA93;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     text-align: center;
-    color: #000;
+    color: rgb(248, 248, 248);
     height: 200px;
 }
 .avatar{
@@ -28,32 +28,12 @@ body {
 .form-body{
     margin: 50px;
 }
-.form-group{
-    margin-bottom:20px;
-  }
-  
+
 .form-body .label-title {
     color:#1BBA93;
     font-size: 17px;
     font-weight: bold;
 }
-
-
-.form-body .form-file_1 {
-    font-size: 17px;
-    box-sizing: border-box;
-    width: 60%;
-    height: 34px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #333333;
-    text-align: left;
-    border: 1px solid #d6d6d6;
-    border-radius: 4px;
-    background: white;
-    outline: none;
-}
- 
 .form-body .form-input {
     font-size: 17px;
     box-sizing: border-box;
@@ -61,44 +41,17 @@ body {
     height: 34px;
     padding-left: 10px;
     padding-right: 10px;
-    color: #333333;
+    color: #000;
     text-align: left;
     border: 1px solid #d6d6d6;
     border-radius: 4px;
     background: white;
     outline: none;
 }
-.form-body .form-file {
-    font-size: 17px;
-    box-sizing: border-box;
-    width: 30%;
-    height: 34px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #333333;
-    text-align: left;
-    border: 1px solid #d6d6d6;
-    border-radius: 4px;
-    background: white;
-    outline: none;
-}
-    
 .horizontal-group .left{
-    float:left;
+    float: left;
     width:49%;
 }
-  
-.horizontal-group .right{
-    float:right;
-    width:49%;
-}
-  
-input[type="file"] {
-outline: none;
-cursor:pointer;
-font-size: 17px;
-}
-
 .form-body input[type="submit"]
 {
     border: none;
@@ -106,8 +59,8 @@ font-size: 17px;
     margin: 20px;
     width: 300px;
     height: 40px;
-    background: #fb2525;
-    color: #fff;
+    background: #1BBA93;
+    color: #fcfcfc;
     font-size: 18px;
     border-radius: 120px;
     text-align: center;
@@ -115,6 +68,6 @@ font-size: 17px;
 .form-body input[type="submit"]:hover
 {
     cursor: pointer;
-    background: #ffc107;
+    background: #42d1f5;
     color: #000;
 }
