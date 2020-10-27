@@ -49,7 +49,9 @@ CREATE TABLE Schedule (
                          REFERENCES Patient,
     BookedBy VARCHAR (4) NOT NULL
                          CHECK (SUBSTR(BookedBy, 1, 1) = 'P' OR 
-                                SUBSTR(BookedBy, 1, 1) = 'R') 
+                                SUBSTR(BookedBy, 1, 1) = 'R'),
+    DocID    VARCHAR (4) REFERENCES Doctor (DocID) 
+                         NOT NULL
 );
 
 CREATE TABLE DocSch (
