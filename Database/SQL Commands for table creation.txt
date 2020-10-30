@@ -44,7 +44,6 @@ CREATE TABLE Schedule (
     SID      VARCHAR (4) PRIMARY KEY
                          CHECK (SUBSTR(SID, 1, 1) = 'S'),
     stTime   TIME        NOT NULL,
-    Date     DATE        NOT NULL,
     PatID    VARCHAR (4) NOT NULL
                          REFERENCES Patient,
     BookedBy VARCHAR (4) NOT NULL
