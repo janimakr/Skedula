@@ -1,0 +1,85 @@
+/*modifying the background details*/
+body{
+    margin: 0;
+    padding: 0;
+    background: url(schedulebg.jpg);
+    background-size:cover;
+    background-position: center;
+    font-family: Roboto;
+}
+/*defining the features of login box*/
+.schedulebox{
+    width: 300px;
+    height: 380px;
+    background :rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(254, 254, 255), alpha);
+    color: #2f9599;
+    top: 50%;
+    left: 50%;
+            
+    position: relative;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+}
+/*defining the features of logo*/
+.Logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -10;
+    left: calc(43% - 50px);
+}
+
+/*defining featurs of contents inside the login box*/
+/*Welcome*/
+h1{
+    margin: -20px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+/*others*/
+form{
+    margin: 20px;
+}
+.schedulebox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.schedulebox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.schedulebox input[type="text"], input[type="password"], input [type="time"], input [type="date"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.schedulebox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2f9599;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.schedulebox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background:rgb(93,188,210);
+    color: #000;
+}
+#dropdown{
+    margin: 15px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+}
+}
