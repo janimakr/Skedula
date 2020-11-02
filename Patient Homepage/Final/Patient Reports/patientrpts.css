@@ -1,0 +1,65 @@
+body{background: #e0e0e0ef;
+    font-family: ROBOTO
+}
+h1{
+	font-size: 2.3em;
+
+    font-weight: 700px;
+}
+#title{
+        color: #075563;
+        padding-bottom: 15px;
+    }
+
+.content1{
+    font-size: 1.35em;
+    color: #000000;  
+    background : #148dac;
+    padding: 10px;
+    border-radius: 20px
+   
+       
+       }
+.content2{
+    font-size: 1.35em;
+    background :#2890aa;
+    padding: 10px;
+    color: #000000;   
+    margin-top: 3px;  
+    border-radius: 20px
+       
+}
+.content3{
+    font-size: 1.35em;
+    background : #19778f;
+    padding: 10px;
+    color: #000000;   
+    margin-top: 4px;
+    border-radius: 20px
+}
+
+/*defining the features of logo*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 177px
+        
+  }
+
+    .buttons input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000dff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.buttons input[type="button"]:hover
+{
+    cursor: pointer;
+    background: #0077ff ;
+    color: #000;
+}
