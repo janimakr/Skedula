@@ -27,7 +27,8 @@ body{
     border-radius: 50%;
     position: relative;
     bottom: -10;
-    left: calc(43% - 50px);
+    align-items: center;
+
 }
 
 /*defining featurs of contents inside the login box*/
@@ -81,5 +82,4 @@ form{
     margin: 15px;
     padding-bottom: 8px;
     border-radius: 10px;
-}
 }
