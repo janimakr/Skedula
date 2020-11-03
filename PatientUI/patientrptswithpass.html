@@ -2,15 +2,18 @@
 <html>
 <head>
   <!-- initializing width for devices -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">   
-	<title>Patient Reports</title>
+  <!-- This gives the browser instructions on how to control the page's dimensions and scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">   <!--Initial zoom level specified by initial scale=1--> 
+  <title>Skedula</title>
   <!-- Bringing in the Bootrstap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
-
+   <!-- Bringing in the Bootrstap CDN-Content Delivery Network; Basiacally adding Bootstrap Cdn to get the basic str instead of downloading and hosting bootstrap on the device -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
   <!-- linking the CSS -->
-	<link rel="stylesheet" type="text/css" href="patientrpts.css">
-        <style>
-body {font-family: Arial, Helvetica, sans-serif;}
+  <link rel="stylesheet" type="text/css" href="./patientrpts.css">
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* The Modal (background) */
 .modal {
@@ -30,17 +33,17 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   background-image: url("./FooterBG.jpg")
 }
+/*model content is the box that pops up*/
 
 /* The Close Button */
 .close {
-  color: #008B8B;
+  background-color: #1BBA93;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -48,16 +51,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .close:hover,
 .close:focus {
-  color: #00FFFF;
+  color: #42d1f5;
   text-decoration: none;
   cursor: pointer;
 
 
 }
 
-
+/*Cahnge button*/
 #pill1 {
-  background-color:     #008B8B;
+  background-color: #1BBA93;
   border: none;
   color: black;
   padding: 10px 20px;
@@ -70,13 +73,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 #pill1:hover {
-  background-color : #00FFFF
+  background-color: #42d1f5;
 }
 </style>
 </head>
 <body>
   <!-- initialize the navbar -->
-	<nav class="navbar navbar-default">
+  <div class='design'><!--Class for modifying the nav bar ribbon-->
+  <nav class="navbar navbar-custom">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -86,40 +90,32 @@ body {font-family: Arial, Helvetica, sans-serif;}
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true">Skedula</a>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    <!--Data Toggle define the kind of toggling to be included-->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Book Appointment</a></li>
-          <li><a href="#">Reschedule </a></li>
-          <li class="active"><a href="#">Reports</a></li>
-        </ul>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Book Appointment</a></li>
+        <li><a href="#">Reschedule</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <div class="col-md-3 cms-boxes-outer">
-            <div class="cms-boxes-items cms-scalability">
-               <div class="boxes-align">
-                  <div class="small-box">
-                    <img src="./doc3o.jpg" alt="Picture">
-                        <li><a href="#">Doctor 3</a></li>
-                        <li><a href="#" id='myBtn'>Change Password</a></li>
-                  </div>
-               </div>
-            </div>
-         </div>
+                    <img src="./DOCTOR 3.jpg" alt="Picture">
+                        <p Style="color:#008B8B">Doctor 3</p>
+                        <p><a href="#" type="button" id="myBtn" style="color:#008B8B" >Change Password</a></p>
           </ul>
         </li>
         <li><a href="#">Logout</a></li>
       </ul>
-        </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 <div class="logo"> <!--creating a class called login box-->
     <img class="center" src="./Logo.png" alt="Logo">
@@ -146,7 +142,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
      </div>
     <div class="row">
         <div class="col-sm-12">
-          <p align="right">COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED</p>
+          <p align="center" style="font-family: ROBOTO;">COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED</p>
         </div>
       </div>
 
@@ -155,17 +151,23 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-       <div id="myModal" class="modal">
+  <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <input type="text" name="Newpass" type="password" placeholder="New Password">
-    <input type="text" name="confirmpass" type="password" placeholder="Confirm Password">
-    <a href="#" type="button" id="pill1">Change</a>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <!-- <span class="close">&times;</span>
+      <input type="text" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+      <input type="text" name="confirmpass" type="password" placeholder="Confirm Password" required>
+      <a href="#" type="button" id="pill1">Change</a> -->
+      <form action="" method="" form id="myForm">
+        <span class="close">&times;</span>
+        <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+        <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" required>
+        <input type="submit" name="login" value="Change" id="pill1">
+      </form>
+    </div>
+  
   </div>
-
-</div>
 
 <script>
 // Get the modal
@@ -183,16 +185,20 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+  span.onclick = function() {
+  document.getElementById("myForm").reset(); 
   modal.style.display = "none";
+  
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
+    document.getElementById("myForm").reset();
     modal.style.display = "none";
   }
 }
+
 </script>
 
 
