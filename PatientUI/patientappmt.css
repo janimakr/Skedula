@@ -36,14 +36,14 @@ body{
 }
 
 .Logo1{
-    padding-left: 600px
+    padding-bottom: 1%;
+    padding-left: 44%;
 }
 
 /*defining featurs of contents inside the login box*/
 /*Welcome*/
 h1{
-    margin: -20px;
-    padding: 0 0 20px;
+    padding-bottom: 3%;
     text-align: center;
     font-size: 22px;
 }
@@ -89,13 +89,45 @@ form{
 #Dropdown{
     margin: 15px;
     padding-bottom: 8px;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 #drop{
+    padding-bottom: 100px;
     width: 200px
 }
 
 #cpr{
-    padding-top: 125px
+    padding-left: 36%;
+    padding-top: 10%;
+    font-family: ROBOTO;
 }
+
+ul.nav a:hover {
+    color: rgb(29, 147, 243);
+}
+.navbar{
+	font-family: ROBOTO;
+	background-color:rgb(29, 147, 243);
+}
+.navbar-brand,.navbar-nav li a{
+	color: aliceblue;
+	font-size:18px ;
+	font-family: "ROBOTO";
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+.navbar-toggle { 
+	border-color: white; 
+	background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
