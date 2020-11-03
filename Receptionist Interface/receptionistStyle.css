@@ -1,0 +1,36 @@
+/*if class is being descibed then .classname else #idName*/
+.logo{
+    width: 200px;
+}
+.name{
+    font-size:40px;
+    color:#1BBA93;
+    font-weight: bold;
+}
+ul.nav a:hover {
+    color: rgb(29, 147, 243);
+}
+.navbar{
+	font-family: ROBOTO;
+	background-color:rgb(29, 147, 243);
+}
+.navbar-brand,.navbar-nav li a{
+	color: aliceblue;
+	font-size:18px ;
+	font-family: "ROBOTO";
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.VLine {
+    border-left: 6px solid aquamarine;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+  }
