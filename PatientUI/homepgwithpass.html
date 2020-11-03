@@ -43,7 +43,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: #008B8B;
+  background-color: #1BBA93;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -51,7 +51,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: #00FFFF;
+  color: #42d1f5;
   text-decoration: none;
   cursor: pointer;
 
@@ -60,7 +60,7 @@ body {
 
 /*Cahnge button*/
 #pill1 {
-  background-color:     #008B8B;
+  background-color: #1BBA93;
   border: none;
   color: black;
   padding: 10px 20px;
@@ -73,7 +73,7 @@ body {
 }
 
 #pill1:hover {
-  background-color : #00FFFF
+  background-color: #42d1f5;
 }
 </style>
 </head>
@@ -123,7 +123,7 @@ body {
         <div id="content">
           <img src="./Logo.png">
         <h1 id='BName'>Skedula</h1>
-        <h3>Our family, caring for yours</h3>
+        <h3 id='BName'>Our family, caring for yours</h3>
         <hr>
         </div>
       </div>
@@ -151,16 +151,38 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <!-- doctor tiles start -->
 <!--The difference between an ID and a class is that an ID is only used to identify one single element in our HTML. IDs are only used when one element on the page should have a particular style applied to it. However, a class can be used to identify more than one HTML element-->
   <h2 id="meet">Meet our doctors</h2>
-<div class="row">
+<!-- <div class="row">
   <div id="roll">
-  <div class="col-md-2"><img src="./DOCTOR 1.jpg"><p id="dnames">Dr. ABC</p></div>
-  <div class="col-md-2"><img src="./DOCTOR 2.jpg"><p id="dnames">Dr. PQR</p></div>
+  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. ABC</p></div>
+  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. PQR</p></div>
   <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. STP</p></div>
-  <div class="col-md-2"><img src="./DOCTOR 4.jpg"><p id="dnames">Dr. XYZ</p></div>
-  <div class="col-md-2"><img src="./DOCTOR 4.jpg"><p id="dnames">Dr. CPR</p></div>
+  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. XYZ</p></div>
+  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. CPR</p></div>
+  </div>
+</div> -->
+
+<div class="container" id="roll">
+  <div allign="center;" class="social">
+    <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
+    <p>Dr. ABC</p>
+  </div>
+  <div allign="center;" class="social">
+    <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
+    <p>Dr. XYZ</p>
+  </div>
+  <div allign="center;" class="social">
+    <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
+    <p>Dr. PQR</p>
+  </div>
+  <div allign="center;" class="social">
+    <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
+    <p>Dr. OTP</p>
+  </div>
+  <div allign="center;" class="social">
+    <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
+    <p>Dr. VPN</p>
   </div>
 </div>
-
 
 <!-- doctor tiles end -->
 
@@ -171,7 +193,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <div class="container">
       <div class="row">
           <div class="col-sm-4">
-            <h2>📞Contact us</h2>
+            <h2 style="size: 20px;">📞Contact us</h2>
             <ul>
              <li>xxx</li>
             <li>abc</li>
@@ -192,10 +214,16 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <input type="text" name="Newpass" type="password" placeholder="New Password">
-    <input type="text" name="confirmpass" type="password" placeholder="Confirm Password">
-    <a href="#" type="button" id="pill1">Change</a>
+    <!-- <span class="close">&times;</span>
+    <input type="text" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+    <input type="text" name="confirmpass" type="password" placeholder="Confirm Password" required>
+    <a href="#" type="button" id="pill1">Change</a> -->
+    <form action="" method="" form id="myForm">
+      <span class="close">&times;</span>
+      <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+      <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" required>
+      <input type="submit" name="login" value="Change" id="pill1">
+    </form>
   </div>
 
 </div>
@@ -217,16 +245,21 @@ btn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
+  document.getElementById("myForm").reset(); 
   modal.style.display = "none";
+  
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
+    document.getElementById("myForm").reset();
     modal.style.display = "none";
   }
 }
 </script>
+
+
 
 
 <!-- website footer end -->
