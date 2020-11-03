@@ -1,0 +1,120 @@
+/*if class is being descibed then .classname else #idName*/
+#content
+{
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px rgb(0,0,0,0,4),
+				 0px 8px 13px rgb(0,0,0,0,1),
+				 0px 18px 23px rgb(0,0,0,0,1);
+}
+.design{
+    background-image: url("./Banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+	background-position: center;
+		color: white
+}	
+html{
+	height: 100%;
+}
+h1{
+	font-size: 5em;
+	font-weight: 600px;
+}
+hr{
+	width: 400px;
+	border-top:1px solid #f8f8f8;
+	border-bottom:1px solid rgb(0,0,0,0.2);
+}
+ul.nav a:hover {
+    color: rgb(29, 147, 243);
+}
+.navbar{
+	font-family: ROBOTO;
+	background-color:rgb(29, 147, 243);
+}
+.navbar-brand,.navbar-nav li a{
+	color: aliceblue;
+	font-size:18px ;
+	font-family: "ROBOTO";
+}
+
+h3	
+{
+	color: white
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.site_footer{
+	background-image: url("./FooterBG.jpg")
+}
+
+.site_footer ul{
+	list-style: none;
+	font-size: 17px;
+	padding-left: 44x;
+	padding-bottom: 45px
+}
+
+.site_footer p{
+	padding-left: 40%
+}
+
+#content{
+	padding-top: 1px;
+}
+
+#content h1{
+	padding-top: 1px;
+}
+
+#BName{
+    color: #29abe2;
+}
+.container{
+    font-family: ROBOTO
+    }
+    
+h2{
+    font-family: ROBOTO;
+    }
+    
+#meet{
+    font-family: ROBOTO
+    }
+    
+#about{
+    font-family: ROBOTO
+    }
+    
+p{
+    font-family: ROBOTO
+    }
+#meet{
+	font-size: 40px;
+	padding-left: 50%;
+	padding-bottom: 10px;
+	color:#2b9af4;
+	padding-top: 50px;
+}
+
+#about{
+	color:#2b9af4;
+    padding-left: 15px;
+    padding-top:50px 
+}
+
+#aboutcon{
+padding-left: 15px;
+padding-top:10px; 
+}
+#roll img{
+    border-radius: 50%;
+}
