@@ -12,30 +12,33 @@ h1{
     }
 
 .content1{
+    font-family: ROBOTO;
     font-size: 1.35em;
     color: #000000;  
     background : #148dac;
     padding: 10px;
-    border-radius: 20px
+    border-radius: 40px
    
        
        }
 .content2{
+    font-family: ROBOTO;
     font-size: 1.35em;
     background :#2890aa;
     padding: 10px;
     color: #000000;   
     margin-top: 3px; 
-    border-radius: 20px 
+    border-radius: 40px 
        
 }
 .content3{
+    font-family: ROBOTO;
     font-size: 1.35em;
     background : #19778f;
     padding: 10px;
     color: #000000;   
     margin-top: 4px;
-    border-radius: 20px
+    border-radius: 40px
 }
 
 /*defining the features of logo*/
@@ -51,7 +54,7 @@ h1{
     border: none;
     outline: none;
     height: 40px;
-    background: #000dff;
+    background: #1BBA93;
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
@@ -59,7 +62,34 @@ h1{
 .buttons input[type="button"]:hover
 {
     cursor: pointer;
-    background: #0077ff ;
+    background: #42d1f5;
     color: #000;
+}
+
+.navbar-toggle { 
+	border-color: white; 
+	background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+ul.nav a:hover {
+    color: rgb(29, 147, 243);
+}
+.navbar{
+	font-family: ROBOTO;
+	background-color:rgb(29, 147, 243);
+}
+.navbar-brand,.navbar-nav li a{
+	color: aliceblue;
+	font-size:18px ;
+	font-family: "ROBOTO";
 }
 
