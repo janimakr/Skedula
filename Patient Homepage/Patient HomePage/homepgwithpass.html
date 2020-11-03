@@ -2,16 +2,18 @@
 <html>
 <head>
   <!-- initializing width for devices -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">   
+  <!-- This gives the browser instructions on how to control the page's dimensions and scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">   <!--Initial zoom level specified by initial scale=1--> 
   <title>Skedula</title>
   <!-- Bringing in the Bootrstap CDN -->
+   <!-- Bringing in the Bootrstap CDN-Content Delivery Network; Basiacally adding Bootstrap Cdn to get the basic str instead of downloading and hosting bootstrap on the device -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
   <!-- linking the CSS -->
-  <link rel="stylesheet" type="text/css" href="confpass.css">
-    <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <link rel="stylesheet" type="text/css" href="./homepg.css">
   <style>
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* The Modal (background) */
 .modal {
@@ -31,13 +33,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   background-image: url("./FooterBG.jpg")
 }
+/*model content is the box that pops up*/
 
 /* The Close Button */
 .close {
@@ -56,7 +58,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 }
 
-
+/*Cahnge button*/
 #pill1 {
   background-color:     #008B8B;
   border: none;
@@ -77,8 +79,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
   <!-- initialize the navbar -->
-  <div class='design'>
-  <nav class="navbar navbar-default">
+  <div class='design'><!--Class for modifying the nav bar ribbon-->
+  <nav class="navbar navbar-custom">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -92,6 +94,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    <!--Data Toggle define the kind of toggling to be included-->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
@@ -103,17 +106,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <div class="col-md-3 cms-boxes-outer">
-            <div class="cms-boxes-items cms-scalability">
-               <div class="boxes-align">
-                  <div class="small-box">
-                    <img src="./doc3o.jpg" alt="Picture">
-                        <li><a href="#">Doctor 3</a></li>
-                        <li><a href="#" type="button" id="myBtn" >Change Password</a></li>
-                  </div>
-               </div>
-            </div>
-         </div>
+                    <img src="./DOCTOR 3.jpg" alt="Picture">
+                        <p Style="color:#008B8B">Doctor 3</p>
+                        <p><a href="#" type="button" id="myBtn" style="color:#008B8B" >Change Password</a></p>
           </ul>
         </li>
         <li><a href="#">Logout</a></li>
@@ -126,7 +121,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <div class="row">
       <div class="col-lg-12 col-sm-">
         <div id="content">
-          <img src="./Logo">
+          <img src="./Logo.png">
         <h1 id='BName'>Skedula</h1>
         <h3>Our family, caring for yours</h3>
         <hr>
@@ -154,10 +149,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <!-- about us end -->
 
 <!-- doctor tiles start -->
-
+<!--The difference between an ID and a class is that an ID is only used to identify one single element in our HTML. IDs are only used when one element on the page should have a particular style applied to it. However, a class can be used to identify more than one HTML element-->
   <h2 id="meet">Meet our doctors</h2>
-
-
 <div class="row">
   <div id="roll">
   <div class="col-md-2"><img src="./DOCTOR 1.jpg"><p id="dnames">Dr. ABC</p></div>
@@ -208,16 +201,16 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
 <script>
-// Get the modal
+// Get the modal-->password box pop up
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
+// Get the button that opens the modal--->change password
 var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
+// Get the <span> element that closes the modal-->close button
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal--> Function definition's ahead 
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -238,7 +231,7 @@ window.onclick = function(event) {
 
 <!-- website footer end -->
 
-<!-- bringing in the scripts like jquery in, for getting the moving parts like dropdowns and collapsing the navbar for mobile devices-->
+<!-- bringing in the scripts like jquery in, for getting the moving parts like dropdowns and collapsing the navbar for mobile devices,Supports Bootstrap frontend framework-->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
