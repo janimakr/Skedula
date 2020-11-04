@@ -48,17 +48,12 @@
     <!--Inital logo and Title Completed-->
 
     <div class="FormContainers">
-        <div class="ExistingPatient">
           <div class="GroupLeft">
             <form action="" method="">
               <div class="form-body">
                 <div class=form-groupM>
                   <label for="Patient ID" class="label-title">Patient ID *<br></label>
                             <input type="text" name="Uname"  minlength="4" maxlength="4" class="form-input" required>
-                </div>
-                <div class=form-groupM>
-                  <label for="Time" class="label-title">Time *<br></label>
-                            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required class="form-input">
                 </div>
                 <div class=form-groupM>
                   <label for="Specialization" class="label-title">Specialization *<br></label>
@@ -81,8 +76,12 @@
                     <option value="doc4">doc4</option>
                     <option value="doc5">doc5</option>
                   </select>
-                </div style="text-align: center;">
-                
+                </div>
+                <div class=form-groupM>
+                  <label for="Time" class="label-title">Time *<br></label>
+                            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required class="form-input">
+                </div>
+                  <div style="text-align: center;">
                 <input type="submit" class="form-input" name="Book" value="Book Appointment" required="required">
               </div>
           </form>
@@ -144,24 +143,20 @@
                   <div class="form-groupL">
                     <label for="pwd" class="label-title">Password *<br></label>
                     <input type="password" class="form-input" name="pwd" id="pwd" pattern="[a-zA-Z0-9]+" title="Enter only an alphanumeric password" maxlength="10" required/>
-                </div>  
+                </div>
                 <div class=form-groupL>
-                  <label for="Time" class="label-title">Time *<br></label>
-                            <input type="time" id="appt" name="appt" min="09:00" max="18:00" required class="form-input">
+                  <label for="Specialization" class="label-title">Specialization *<br></label>
+                  <select name="Specialization" id='Specilization'class="form-input" required>
+                    <option value="" disabled selected>Select your required treatment</option>
+                    <option value="spec1">spec1</option>
+                    <option value="spec2">spec2</option>
+                    <option value="spec3">spec3</option>
+                    <option value="spec4">spec4</option>
+                    <option value="spec5">spec5</option>
+                  </select>
                 </div>
             </div>
             <div class=form-group>
-              <div class=form-groupL>
-                <label for="Specialization" class="label-title">Specialization *<br></label>
-                <select name="Specialization" id='Specilization'class="form-input" required>
-                  <option value="" disabled selected>Select your required treatment</option>
-                  <option value="spec1">spec1</option>
-                  <option value="spec2">spec2</option>
-                  <option value="spec3">spec3</option>
-                  <option value="spec4">spec4</option>
-                  <option value="spec5">spec5</option>
-                </select>
-              </div>
               <div class=form-groupL>
                 <label for="Doctor" class="label-title">Doctor *<br></label>
                 <select name="Doctor" id='Doctor' class="form-input"required>
@@ -173,7 +168,11 @@
                   <option value="doc5">doc5</option>
                 </select>
               </div>            
-  
+                
+              <div class=form-groupL>
+                <label for="Time" class="label-title">Time *<br></label>
+                          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required class="form-input">
+              </div>
             </div>
             <!--Registration Page Submit button  -->
             <div style="text-align: center;">
