@@ -21,15 +21,13 @@ CREATE TABLE Receptionist (
 CREATE TABLE Patient (
     PatID   VARCHAR (4)   PRIMARY KEY
                           CHECK (SUBSTR(PatID, 1, 1) = 'P'),
-    pwd     VARCHAR (10)   NOT NULL,
+    pwd     VARCHAR (10)  NOT NULL,
     fName   VARCHAR (15)  NOT NULL,
     sName   VARCHAR (10),
     addrL1  VARCHAR (100) NOT NULL,
-    addrL12 VARCHAR (100),
-    entBy   VARCHAR (4)   NOT NULL
-                          CHECK (SUBSTR(entBy, 1, 1) = 'P' OR 
-                                 SUBSTR(entBy, 1, 1) = 'R') 
+    addrL12 VARCHAR (100) 
 );
+
 
 CREATE TABLE PatMob (
     PatID VARCHAR (4) REFERENCES Patient,
@@ -41,17 +39,16 @@ CREATE TABLE PatMob (
 );
 
 CREATE TABLE Schedule (
-    SID      VARCHAR (4) PRIMARY KEY
-                         CHECK (SUBSTR(SID, 1, 1) = 'S'),
-    stTime   TIME        NOT NULL,
-    PatID    VARCHAR (4) NOT NULL
-                         REFERENCES Patient,
-    BookedBy VARCHAR (4) NOT NULL
-                         CHECK (SUBSTR(BookedBy, 1, 1) = 'P' OR 
-                                SUBSTR(BookedBy, 1, 1) = 'R'),
-    DocID    VARCHAR (4) REFERENCES Doctor (DocID) 
-                         NOT NULL
+    SID    VARCHAR (4) PRIMARY KEY
+                       CHECK (SUBSTR(SID, 1, 1) = 'S'),
+    stTime TIME        NOT NULL,
+    PatID  VARCHAR (4) NOT NULL
+                       REFERENCES Patient,
+    DocID  VARCHAR (4) REFERENCES Doctor (DocID) 
+                       NOT NULL
 );
+
+
 
 CREATE TABLE DocSch (
     SID    VARCHAR (4)   REFERENCES Schedule,
