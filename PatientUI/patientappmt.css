@@ -1,5 +1,5 @@
 .schedulebox{
-    size: 40px;
+    size: 0px;
 }
 
 .navbar{
@@ -10,7 +10,7 @@ font-family: ROBOTO
 body{
     margin: 0;
     padding: 0; 
-    background: url("./schedulebg.jpg");
+    background: url("./schedulebg.png");
     background-size:cover;
     background-position: center;
     font-family: ROBOTO
@@ -32,7 +32,7 @@ body{
 .Logo{
     width: 150px;
     height: 150px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .Logo1{
@@ -72,6 +72,7 @@ form{
 }
 .schedulebox input[type="submit"]
 {
+    padding: 10px; 
     border: none;
     outline: none;
     height: 40px;
@@ -86,12 +87,16 @@ form{
     background:rgb(93,188,210);
     color: #000;
 }
-#Dropdown{
-    margin: 15px;
-    padding-bottom: 8px;
-    border-radius: 7px;
+#Dropdowna{
+    width:260px;
+    margin-bottom: 20px;
+    height: 25px;
 }
-
+#Dropdownb{
+    width:260px;
+    margin-bottom: 20px;
+    height: 25px;
+}
 #drop{
     padding-bottom: 100px;
     width: 200px
