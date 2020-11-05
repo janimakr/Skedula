@@ -3,7 +3,6 @@ display-flex, .FormContainers, .form-group,.GroupLeft,.GroupRight{
   
 }
 
-
 .logo{
   width: 135px;
 }
@@ -68,14 +67,16 @@ display: table;
 background-color: rgb(4, 37, 65);
 }
 .dropbtn {
-background-color: #3498DB;
+background-color:  #4074d4;
 color: white;
-padding: 16px;
+padding: 5px 30px;
+margin: 8px 0; 
 font-size: 16px;
 border: none;
 cursor: pointer;
 position:absolute;
 left:900px;
+cursor: pointer; 
 
 
 }
@@ -83,6 +84,7 @@ left:900px;
 display:inline-block;
 padding-block-end: 60px;
 left: 100px;
+
 
 }
 
@@ -149,6 +151,9 @@ input.invalid {
 /* Hide all steps by default: */
 .tab {
   display: none;
+  position:absolute;
+left:900px;
+  
 }
 
 /* Make circles that indicate the steps of the form: */
