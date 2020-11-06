@@ -35,7 +35,6 @@ body {
 .modal-content {
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
   background-image: url("./FooterBG.jpg")
 }
@@ -221,7 +220,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     <form action="" method="" form id="myForm">
       <span class="close">&times;</span>
       <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
-      <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" required>
+      <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
       <input type="submit" name="login" value="Change" id="pill1">
     </form>
   </div>
