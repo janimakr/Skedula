@@ -89,24 +89,23 @@ body {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
+      <a class="navbar-brand" href="./homepgwithpass.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <!--Data Toggle define the kind of toggling to be included-->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="./homepgwithpass.html">Home</a></li>
         <li><a href="./patientappmtwithpass.html">Book Appointment</a></li>
         <li><a href="./Patientrschwithpass.html">Reschedule</a></li>
         <li><a href="./patientrptswithpass.html">Reports</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="idrop">Profile<span class="caret"></span></a>
           <ul class="dropdown-menu">
-                    <img src="./DOCTOR 3.jpg" alt="Picture">
-                        <h3 Style="color:#008B8B">Doctor 3</h3>
+                    <img src="./Patient1.png" alt="Picture" id="Patient1">
+                        <h3 Style="color:#008B8B">Mr. Patient</h3>
                         <p><a href="#" type="button" id="myBtn" style="color:#008B8B" >Change Password</a></p>
           </ul>
         </li>
@@ -150,36 +149,33 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <!-- doctor tiles start -->
 <!--The difference between an ID and a class is that an ID is only used to identify one single element in our HTML. IDs are only used when one element on the page should have a particular style applied to it. However, a class can be used to identify more than one HTML element-->
   <h2 id="meet">Meet our doctors</h2>
-<!-- <div class="row">
-  <div id="roll">
-  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. ABC</p></div>
-  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. PQR</p></div>
-  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. STP</p></div>
-  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. XYZ</p></div>
-  <div class="col-md-2"><img src="./DOCTOR 3.jpg"><p id="dnames">Dr. CPR</p></div>
-  </div>
-</div> -->
+  <hr>
 
 <div class="container" id="roll">
   <div allign="center;" class="social">
     <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
     <p>Dr. ABC</p>
+    <p id="spec">Spec1</p>
   </div>
   <div allign="center;" class="social">
     <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
     <p>Dr. XYZ</p>
+    <p id="spec">Spec2</p>
   </div>
   <div allign="center;" class="social">
     <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
     <p>Dr. PQR</p>
+    <p id="spec">Spec3</p>
   </div>
   <div allign="center;" class="social">
     <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
     <p>Dr. OTP</p>
+    <p id="spec">Spec4</p>
   </div>
   <div allign="center;" class="social">
     <img src="./DOCTOR 3.jpg" alt="" width="200" height="200" />
     <p>Dr. VPN</p>
+    <p id="spec">Spec5</p>
   </div>
 </div>
 
@@ -194,9 +190,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <div class="col-sm-4">
             <h2 style="size: 20px;">Contact us</h2>
             <ul>
-             <li>xxx</li>
-            <li>abc</li>
-            <li>abc@gmail.com</li>
+              <li>xxx</li>
+              <li>abc</li>
+              <li>abc@gmail.com</li>
             </ul>
           </div>
       </div>
