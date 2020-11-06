@@ -27,9 +27,6 @@ hr{
 	border-top:1px solid #f8f8f8;
 	border-bottom:1px solid rgb(0,0,0,0.2);
 }
-ul.nav a:hover {
-    color: rgb(29, 147, 243);
-}
 .navbar{
 	font-family: ROBOTO;
 	background-color:rgb(29, 147, 243);
@@ -40,10 +37,25 @@ ul.nav a:hover {
 	font-family: "ROBOTO";
 }
 
+/*start dropdown color fix*/
+
+ul.nav a:focus {
+    background-color: rgb(29, 147, 243);
+    color: white
+}
+
+ul.nav a:hover {
+    color: rgb(29, 147, 243);
+    background-color: white
+}
+
+/*end dropdown color fix*/
+
 h3	
 {
 	color: white
 }
+
 html,body
 {
     width: 100%;
@@ -59,12 +71,12 @@ html,body
 .site_footer ul{
 	list-style: none;
 	font-size: 17px;
-	padding-left: 44x;
+	padding-left: 10px;
 	padding-bottom: 45px
 }
 
 .site_footer p{
-	padding-left: 40%
+	padding-left: 72%
 }
 
 #content{
@@ -103,6 +115,10 @@ p{
 	color:#2b9af4;
 	padding-top: 40px;
 	text-align: center;
+}
+
+hr{
+  	  border: 1px solid #1BBA93;
 }
 
 #about{
@@ -148,6 +164,20 @@ text-align: justify;
 	  padding-top: 10px;
 	  text-align: center;
 	  color: #1BBA93;
+	  font-size: 17px
+  }
+  #spec{
+  	text-align: center;
+	  color: #42d1f5;
+	  font-size: 16px
+	  margin:0;
+  	  padding:0;
+  	  line-height: 9px;
+  	  padding-bottom: 10px
+  }
+
+  .social img{
+  	border: 7px solid #1BBA93
   }
 
 .navbar-toggle { 
@@ -156,3 +186,8 @@ text-align: justify;
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 } 
 
+/*Editing look of Patient dropdown*/
+
+#Patient1{
+	border-radius: 50%;
+}
