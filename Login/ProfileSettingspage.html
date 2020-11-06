@@ -2,13 +2,12 @@
     <head>
     <title>Registration</title>
 </head>
-<link rel="stylesheet" type="text/css" href="./profileStyle.css"> <!--linking the css component-->
+<link rel="stylesheet" type="text/css" href="./profileStyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--linking the css component-->
 <body>
-    <div class="container">
             <img src="./signup-img.jpg" alt="signup-img" class="signup-img">
-        <div class="ProfileSettings">
-            <div class="signup-form">
-                <form action="" onsubmit="return checkEmail(this);" method="" class="regform">
+
+                <form action="../PatientUI/homepgwithpass.html" onsubmit="return checkpwd(this);" method="" class="regform">
                     <div class="form-body">
                         <div style="text-align: center"><img src="./logo.png" alt="logo" class="logo"></div>
                         <div style="text-align: center" class="name">Skedula</div>
@@ -83,18 +82,15 @@
                     <div style="text-align: center;">
                             <input type="submit" class="form-input" name="verify" value="Register!" required="required">       
                     </div>
-                </div>
-            </div>
         </form>
-        </div>
-    </div>   
+        </div>   
 </body>
 </html>
 
 <!--Javascript to check if pwd are equal-->
 <script type="text/javascript" language="JavaScript">
    //checking for equality
-    function checkEmail(theForm) {
+    function checkpwd(theForm) {
         if (theForm.pwd.value != theForm.cpwd.value)
         {
             alert('Passwords donot match');
