@@ -128,12 +128,11 @@ body {
           <p>Patient ID</p>
           <input height="25" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
 
-          <p>Time </p>
-          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+          
           <p>Specialization</p>
           
           <select id="Dropdowna" id='drop' required>
-              <option value="" disabled selected>Select your required treatment</option>
+              <option value="" disabled selected>Select the required specialization</option>
               <option value="spec1">spec1</option>
               <option value="spec2">spec2</option>
               <option value="spec3">spec3</option>
@@ -151,6 +150,8 @@ body {
                       <option value="doc4">Dr. OTP</option>
                       <option value="doc5">Dr. VPN</option>
                     </select>
+                    <p>Time </p>
+          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
         <div id="book">
           <input type="submit" name="Book" value="Book Appointment">
         </div>
