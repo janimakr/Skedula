@@ -1,0 +1,103 @@
+<html>
+    <head>
+    <title>Registration</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./profileStyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--linking the css component-->
+<body>
+            <img src="./signup-img.jpg" alt="signup-img" class="signup-img">
+
+                <form action="../PatientUI/homepgwithpass.html" onsubmit="return checkpwd(this);" method="" class="regform">
+                    <div class="form-body">
+                        <div style="text-align: center"><img src="./logo.png" alt="logo" class="logo"></div>
+                        <div style="text-align: center" class="name">Skedula</div>
+                        <div class=form-group>
+                            <div class="form-groupL">
+                                <label for="firstname" class="label-title">First name *<br></label>
+                                <input type="text" name="firstname" id="firstname" class="form-input" required>
+                           </div>
+                           <div class="form-groupL">
+                                <label for="lastname" class="label-title">Last name<br></label>
+                                <input type="text" name="lastname" id="lastname" class="form-input"/>
+                           </div>
+                        </div>
+                 
+                    <div class="form-group">
+                    <!-- Mobile number 1 -->
+                        <div class="form-groupL">
+                            <label for="MobNo" class="label-title">Mobile Number *<br></label>
+                            <input type="tel" class="form-input" name="MobNo" id="MobNo" pattern="[6-9]{1}[0-9]{9}" title="Enter a valid mobile Number" minlength="10" maxlength="10" required/>
+                        </div>
+                            <!-- Mobile number 2 --> 
+                        <div class="form-groupL"> 
+                            <label for="AltMobNo" class="label-title">Alternate Mobile Number<br> </label>
+                            <input type="tel" class="form-input" name="AltMobNo" id="AltMobNo" pattern="[6-9]{1}[0-9]{9}" title="Enter a valid mobile Number" minlength="10" maxlength="10"/>
+                        </div> 
+                    </div>
+
+                    <!-- Email id  -->
+                    <div class="form-groupL">
+                            <label for="Email" class="label-title">Email id *<br></label>
+                            <input type="email" class="form-input" name="Email" id="email" required />
+                    </div>
+
+                    <!-- Password  -->
+                    <div class="form-group">
+                        <!-- Enter Password -->
+                            <div class="form-groupL">
+                                <label for="pwd" class="label-title">Password *<br></label>
+                                <input type="password" class="form-input" name="pwd" id="pwd" pattern="[a-zA-Z0-9]+" title="Enter only an alphanumeric password" maxlength="10" required/>
+                            </div>
+                                <!-- Confirm Password --> 
+                            <div class="form-groupL"> 
+                                <label for="AltMobNo" class="label-title">Confirm Password *<br> </label>
+                                <input type="password" class="form-input" name="cpwd" id="cpwd" pattern="[a-zA-Z0-9]+" title="Enter only an alphanumeric password" maxlength="10" required/>
+                            </div> 
+                        </div>
+                    
+                                        <!-- Residential Address -->
+                    <label for="Residential Address L1" class="label-title">Residential Address:<br></label> 
+                    <div class="form-group">
+                            <div class="form-groupL">
+                            <!-- Residential Address Line 1 -->
+                            <label for="Residential Address L1" class="label-title">Address Line 1 *<br></label>
+                                <input type="text" name="ResAddrL1" id="Residential Address L1" class="form-input"  required/>
+                            </div>
+                        <!-- Residential Address Line 2 -->
+                            <div class="form-groupL">
+                               <label for="Residential Address L2" class="label-title">Address Line 2<br></label>
+                                <input type="text" name="ResAddrL2" id="Residential Address L2" class="form-input"/>
+                            </div>
+                    </div>
+                    
+                    <div>
+                        <p><input type="checkbox" required name="final check1"> BY DOWNLOADING/INSTALLING/USING THE APPLICATION, YOU (A) ACKNOWLEDGE THAT YOU HAVE READ AND UNDERSTAND THIS AGREEMENT; (B) REPRESENT THAT YOU ARE 18 YEARS OF AGE OR OLDER/OF LEGAL AGE TO ENTER INTO A BINDING AGREEMENT; AND (C) ACCEPT THIS AGREEMENT AND AGREE THAT YOU ARE LEGALLY BOUND BY ITS TERMS. IF YOU DO NOT AGREE TO THESE TERMS, DO NOT DOWNLOAD/ INSTALL/USE THE APPLICATION AND DELETE IT FROM YOUR MOBILE DEVICE.</p>
+                    </div>
+
+                    <div>
+                        <p><input type="checkbox" required name="final chec k2"> I HEREBY AGREE TO RECIEVE  THE NEWSLETTER FOR PROMOTIONAL OFFERS/DISCOUNTS FROM SKEDULA. </p>
+                    </div>
+                        
+                    <!--Registration Page Submit button  -->
+                    <div style="text-align: center;">
+                            <input type="submit" class="form-input" name="verify" value="Register!" required="required">       
+                    </div>
+        </form>
+        </div>   
+</body>
+</html>
+
+<!--Javascript to check if pwd are equal-->
+<script type="text/javascript" language="JavaScript">
+   //checking for equality
+    function checkpwd(theForm) {
+        if (theForm.pwd.value != theForm.cpwd.value)
+        {
+            alert('Passwords donot match');
+            return false;//pop up if the passwords do not match
+        } else {
+            return true;
+        }
+    }
+</script> 
+    

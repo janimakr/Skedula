@@ -22,16 +22,30 @@ body {
     padding-bottom: 5%;
 }
 
+.FormContainers:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
 .GroupRight,.GroupLeft{
-    width:700px;
+    width:50%;
+    float: left;
 }
+@media screen and (max-width: 100%) {
+    .GroupRight,.GroupLeft {
+      width: 100%;
+    }
+  }
 .GroupLeft{
-    padding-left: 35%;
+    padding-left: 15%;
+
 
 }
 .GroupRight{
 
-    padding-left:25%;
+    padding-left:12%;
+    padding-right:3%
 
 }
 .form-group {
@@ -104,17 +118,18 @@ ul.nav a:hover {
 }
 .navbar{
 	font-family: ROBOTO;
-	background-color:rgb(29, 147, 243);
+    background-color:rgb(29, 147, 243);
+    overflow-x: auto;
 }
 .navbar-brand,.navbar-nav li a{
 	color: aliceblue;
 	font-size:18px ;
 	font-family: "ROBOTO";
 }
-.VLine {
-    border-left: 6px solid #033f30;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 90px;
-  }
+  .navbar-toggle { 
+	border-color: white; 
+	background-image: url(
+         
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+/*Adding a image from th above link with given coordinates and color*/

@@ -3,10 +3,17 @@ body{background: #e0e0e0ef;
 }
 
 h1{
-	font-size: 2.3em;
+    font-size: 2.3em;
 
     font-weight: 700px;
 }
+
+/*Editing look of Patient dropdown*/
+
+#Patient1{
+    border-radius: 50%;
+}
+
 #title{
         color: #075563;
         padding-bottom: 15px;
@@ -73,10 +80,24 @@ h1{
 
 
 .navbar-toggle { 
-	border-color: white; 
-	background-image: url( 
+    border-color: white; 
+    background-image: url( 
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 } 
+
+/*start dropdown color fix*/
+
+ul.nav a:focus {
+    background-color: rgb(29, 147, 243);
+    color: white
+}
+
+ul.nav a:hover {
+    color: rgb(29, 147, 243);
+    background-color: white
+}
+
+/*end dropdown color fix*/
 
 html,body
 {
@@ -90,11 +111,11 @@ ul.nav a:hover {
     color: rgb(29, 147, 243);
 }
 .navbar{
-	font-family: ROBOTO;
-	background-color:rgb(29, 147, 243);
+    font-family: ROBOTO;
+    background-color:rgb(29, 147, 243);
 }
 .navbar-brand,.navbar-nav li a{
-	color: aliceblue;
-	font-size:18px ;
-	font-family: "ROBOTO";
+    color: aliceblue;
+    font-size:18px ;
+    font-family: "ROBOTO";
 }

@@ -1,0 +1,111 @@
+.logo{
+    width: 125px;
+}
+.name{
+    font-size:30px;
+    color:#29abe2;
+    ;
+    font-weight: bold;
+}
+ul.nav a:hover {
+    color: rgb(29, 147, 243);
+}
+.navbar{
+	font-family: ROBOTO;
+	background-color:rgb(29, 147, 243);
+}
+.navbar-brand,.navbar-nav li a{
+	color: aliceblue;
+	font-size:18px ;
+	font-family: "ROBOTO";
+}
+.VLine {
+    border-left: 6px solid #033f30;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+  }
+  
+
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=passwor] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit/register button */
+  .registerbtn3 {
+    background-color: #4074d4;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    float: left;
+  }
+  
+  .registerbtn3:hover {
+    opacity:1;
+  }
+  .registerbtn2 {
+    background-color: #4074d4;
+    color: white;
+    padding: 5px 30px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+   
+    
+
+  }
+  .registerbtn1{
+    background-color: #4074d4;
+    color: white;
+    margin: 8px 0; 
+    padding: 5px 30px;
+    border: none;
+    cursor: pointer; 
+    opacity: 0.9;
+  }
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  .navbar-toggle { 
+    border-color: white; 
+    background-image: url(
+           
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  } 
+  /*Adding a image from th above link with given coordinates and color*/
+  
