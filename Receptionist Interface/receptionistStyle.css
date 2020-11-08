@@ -119,7 +119,7 @@ ul.nav a:hover {
 .navbar{
 	font-family: ROBOTO;
     background-color:rgb(29, 147, 243);
-    overflow-x: auto;
+
 }
 .navbar-brand,.navbar-nav li a{
 	color: aliceblue;
