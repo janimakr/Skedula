@@ -65,13 +65,16 @@ html,body
     overflow-x: hidden; 
 }
 .site_footer{
-	background-image: linear-gradient(#4481eb 0%, #04befe 100%);
+	background-image: url("./FooterBG.png");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .site_footer ul{
 	list-style: none;
 	font-size: 17px;
-	padding-left: 10px;
+	padding-left: 59px;
 	padding-bottom: 45px
 }
 
@@ -111,9 +114,15 @@ p{
     }
 #meet{
 	font-size: 40px;
-	padding-bottom: 10px;
 	color:#2b9af4;
-	padding-top: 40px;
+	padding-top: 70px;
+	text-align: center;
+}
+
+#hons{
+	font-size: 40px;
+	color:#2b9af4;
+	padding-top: 35px;
 	text-align: center;
 }
 
@@ -125,7 +134,7 @@ hr{
 	font-size: 40px;
 	color:#2b9af4;
     padding-left: 15px;
-	padding-top:30px 
+	padding-top:25px 
 }
 
 #aboutcon{
@@ -169,7 +178,8 @@ text-align: justify;
   #spec{
   	text-align: center;
 	  color: #42d1f5;
-	  font-size: 16px;
+	  font-size: 16px
+	  margin:0;
   	  padding:0;
   	  line-height: 9px;
   	  padding-bottom: 10px
@@ -189,4 +199,41 @@ text-align: justify;
 
 #Patient1{
 	border-radius: 50%;
+}
+
+#footleft{
+	text-align: right;
+}
+
+#slogan
+{
+	padding-left: 9%;
+	padding-top: 10%;
+	color: white
+}
+
+.discol {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  text-align: center
+}
+
+.discol p{
+	padding-top: 10px;
+	  text-align: center;
+	  color: #1BBA93;
+	  font-size: 19px;
+	  padding-bottom: 30px;
+}
+
+.discol img{
+	border-radius: 50%;
+	border: 7px solid #1BBA93
+}
+
+.disrow::after {
+  content: "";
+  clear: both;
+  display: table;
 }
