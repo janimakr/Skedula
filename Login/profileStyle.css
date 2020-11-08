@@ -14,7 +14,7 @@ body {
     background-size: cover;
     font-weight: 400;
 
-    font-family:"ROBOTO"; 
+    font-family:Arial, Helvetica, sans-serif; 
   }
 .signup-img {
     max-width: max-content;
@@ -65,7 +65,6 @@ position: relative; }
     color: #000;
     text-align: left;
     border: 1px solid #d6d6d6;
-    border-radius: 4px;
     background: white;
     outline: none;
 }

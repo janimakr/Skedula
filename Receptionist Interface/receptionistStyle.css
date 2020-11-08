@@ -10,7 +10,7 @@ body {
     background-size: cover;
     font-weight: 400;
     padding:  0;
-    font-family:"ROBOTO"; 
+    font-family:Arial, Helvetica, sans-serif; 
   }
   .FormContainers {
     width: 100%;
@@ -74,7 +74,7 @@ body {
     color: #05775b;
     text-align: left;
     border: 1px solid #d6d6d6;
-    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
     background: white;
     outline: none;
     
