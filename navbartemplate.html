@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(63, 158, 202);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+ 
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* The popup form - hidden by default */
+.navbar{
+	font-family: ROBOTO;
+    background-color: #53acca;
+    padding-left: 50px !important;
+   padding-right: 50px ;
+    
+}
+.navbar-brand {
+font-size: 30px;
+
+}
+/* Modify brand and text color */ 
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text,.navbar-nav li a { 
+    color: #010405a4; 
+} 
+.navbar-brand,.navbar-nav {
+	color: rgb(2, 3, 5);
+	font-size:18px ;
+	font-family: "ROBOTO";
+}
+
+.form-popup {
+  
+        
+        display:none;
+        top:100px; 
+        right:60%;
+        left:40%;
+        width:300px;
+        position:fixed; 
+        z-index: 2000;
+        padding:30px; 
+        -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+        -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+        box-shadow:0 0 10px rgba(0,0,0,0.4)
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #3c93ad;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:#2e748a;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+</style>
+<body>
+   
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">New Appointment</a></li>
+      <li><a href="#">Reschedule</a></li>
+      <li><a href="#">Reports</a></li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                    <h3 Style="color:#0d6161" align="center">Patient Name</h3>
+                    <p><button class="open-button" onclick="openForm()">Change Password</button>
+
+                    </p>
+                    
+      </ul>
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h3>Change Password</h3>
+          <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+          <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+      
+          <button type="submit" class="btn">Confirm</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+         
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
