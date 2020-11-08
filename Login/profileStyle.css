@@ -56,6 +56,9 @@ position: relative; }
     margin-bottom: 2px;
     display: block;
 }
+#para{
+    padding-top: 2%;
+}
 .form-body .form-input {
     font-size: 17px;
     box-sizing: border-box;
