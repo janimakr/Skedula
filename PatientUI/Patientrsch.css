@@ -1,4 +1,4 @@
-body{background: #e0e0e0ef;
+body{background: #ffffff;;
     font-family: ROBOTO;
 }
 h1{
@@ -11,36 +11,6 @@ h1{
         padding-bottom: 15px;
     }
 
-.content1{
-    font-family: ROBOTO;
-    font-size: 1.35em;
-    color: #000000;  
-    background : #148dac;
-    padding: 10px;
-    border-radius: 40px
-   
-       
-       }
-.content2{
-    font-family: ROBOTO;
-    font-size: 1.35em;
-    background :#2890aa;
-    padding: 10px;
-    color: #000000;   
-    margin-top: 3px; 
-    border-radius: 40px 
-       
-}
-.content3{
-    font-family: ROBOTO;
-    font-size: 1.35em;
-    background : #19778f;
-    padding: 10px;
-    color: #000000;   
-    margin-top: 4px;
-    border-radius: 40px
-}
-
 /*defining the features of logo*/
 .center {
     display: block;
@@ -49,21 +19,30 @@ h1{
     height: 177px
   }
 
-  .buttons input[type="button"]
+  input[type=button]
+  {
+    outline: none;
+    height: 40px;
+    background:  #045b68;
+    width:120px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+input[type=time]
 {
     border: none;
     outline: none;
     height: 40px;
-    background: #1BBA93;
-    color: #fff;
+    background: #0b6e7e;
+    width:80px;
     font-size: 18px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
-.buttons input[type="button"]:hover
+input[type=button], input[type=time]:hover
 {
     cursor: pointer;
-    background: #42d1f5;
-    color: #000;
+    background: #0b6e7e;
+   
 }
 
 .navbar-toggle { 
@@ -93,3 +72,48 @@ ul.nav a:hover {
 	font-family: "ROBOTO";
 }
 
+
+    .dashboard-panel { 
+        margin-top: 30px;
+        color: #000000;
+        margin-left: 150px;
+        margin-right:150px;
+    } 
+ 
+    .panelTitle { 
+        padding-Left: 4px; 
+        font-size: 20px; 
+        height: 60px;
+         color: #4d6272;
+          display: inline; } 
+
+    .panelTitleBar { 
+        align-content: center; 
+        text-align: center; 
+        margin-top: 20px; 
+    } 
+    .hubPanel { 
+        padding: 20px; 
+        min-height: 220px;
+        background: #adeeec;
+ 
+     }
+     .shadowHover:hover { 
+         box-shadow: 0 5px 11px 0 rgba(61,109,167,0.1), 0 4px 15px 0 rgba(61,109,167,0.1); 
+     }
+      .panelContent { 
+          font-size: 18px;
+           font-weight: 300; 
+           margin-top: 30px;
+           text-align: center; 
+           color: #6ea19b;
+         
+           margin-bottom: 30px;
+    } 
+        
+      
+       .panelSeperator { border-bottom: 1px solid #ddd;
+        margin-left: 80px;
+        margin-right:80px; } 
+
+     

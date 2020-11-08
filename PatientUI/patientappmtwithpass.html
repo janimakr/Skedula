@@ -98,10 +98,10 @@ body {
     <!--Data Toggle define the kind of toggling to be included-->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="./homepgwithpass.html">Home</a></li>
-        <li><a href="./patientappmtwithpass.html">Book Appointment</a></li>
-        <li><a href="./Patientrschwithpass.html">Reschedule</a></li>
-        <li><a href="./patientrptswithpass.html">Reports</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Book Appointment</a></li>
+        <li><a href="#">Reschedule</a></li>
+        <li><a href="#">Reports</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
@@ -112,54 +112,58 @@ body {
                         <p><a href="#" type="button" id="myBtn" style="color:#008B8B" >Change Password</a></p>
           </ul>
         </li>
-        <li><a href=../Login/loginPage.html>Logout</a></li>
+        <li><a href="#">Logout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
+<form action="action_page.php">
+  <div class="container">
+    <div  class="Logo1"><img src="./Logo.png" alt="Logo" class="Logo"><!--creating a logo class to modify the logo--></div>
+  
       
-<div  class="Logo1"><img src="./Logo.png" alt="Logo" class="Logo"><!--creating a logo class to modify the logo--></div>
-  <div class="schedulebox"> 
-      
-      <!--creating a class called login box-->
-      <h1>Please fill the details</h1>
-      <form action="" method="">
-          <p>Patient ID</p>
-          <input height="25" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
+    <h1>New Appointment</h1>
+    <p>Please fill in this form to book an Appointment</p>
+    <hr>
+    <p>Patient ID</p>
+    <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
 
-          
-          <p>Specialization</p>
-          
-          <select id="Dropdowna" id='drop' required>
-              <option value="" disabled selected>Select the required specialization</option>
-              <option value="spec1">spec1</option>
-              <option value="spec2">spec2</option>
-              <option value="spec3">spec3</option>
-              <option value="spec4">spec4</option>
-              <option value="spec5">spec5</option>
-            </select>
-            
-                <p>Doctor</p>
-                   
-                  <select id="Dropdownb" id='drop' required>
-                      <option value="" disabled selected>Select your preferred doctor</option>
-                      <option value="doc1">Dr. ABC</option>
-                      <option value="doc2">Dr. PQR</option>
-                      <option value="doc3">Dr. XYZ</option>
-                      <option value="doc4">Dr. OTP</option>
-                      <option value="doc5">Dr. VPN</option>
-                    </select>
-                    <p>Time </p>
-          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-        <div id="book">
-          <input type="submit" name="Book" value="Book Appointment">
-        </div>
-      </form>
-  </div>
+    
+    <p>Specialization</p>
+    
+    <select id="Dropdownform" id='drop' required>
+        <option value="" disabled selected>Select the required specialization</option>
+        <option value="spec1">spec1</option>
+        <option value="spec2">spec2</option>
+        <option value="spec3">spec3</option>
+        <option value="spec4">spec4</option>
+        <option value="spec5">spec5</option>
+      </select>
+      
+          <p>Doctor</p>
+             
+            <select id="Dropdownform" id='drop' required>
+                <option value="" disabled selected>Select your preferred doctor</option>
+                <option value="doc1">Dr. ABC</option>
+                <option value="doc2">Dr. PQR</option>
+                <option value="doc3">Dr. XYZ</option>
+                <option value="doc4">Dr. OTP</option>
+                <option value="doc5">Dr. VPN</option>
+              </select>
+              <p>Time </p>
+    <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
+  <div id="book">
+
+    
+    <button type="submit" class="registerbtn">Book Appointment</button></div>
+ <form>
+   
+
+    
   <div class="row">
       <div class="col-sm-12">
-        <p id='cpr'>COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED</p>
+        <p align=right id='cpr'>COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED</p>
       </div>
     </div>
 

@@ -1,6 +1,3 @@
-.schedulebox{
-    size: 0px;
-}
 
 .navbar{
 font-family: ROBOTO
@@ -15,19 +12,7 @@ body{
     background-position: center;
     font-family: ROBOTO
 }
-/*defining the features of login box*/
-.schedulebox{
-    width: 300px;
-    height: 380px;
-    background :rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(254, 254, 255), alpha);
-    color: #2f9599;
-    padding-top: 190px;
-    left: 50%;
-    position: relative;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    font-family: Roboto;
-}
+
 /*defining the features of logo*/
 .Logo{
     width: 150px;
@@ -48,54 +33,18 @@ h1{
     font-size: 22px;
 }
 /*others*/
-form{
-    margin: 20px;
-}
-.schedulebox p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-}
-.schedulebox input{
-    width: 100%;
-    margin-bottom: 20px;
-}
-.schedulebox input[type="text"], input[type="password"], input [type="time"], input [type="date"]
-{
+
+
+
+#Dropdownform{
+    width:100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
     border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-}
-.schedulebox input[type="submit"]
-{
-    padding: 10px; 
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #2f9599;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-}
-.schedulebox input[type="submit"]:hover
-{
-    cursor: pointer;
-    background:rgb(93,188,210);
-    color: #000;
-}
-#Dropdowna{
-    width:260px;
-    margin-bottom: 20px;
-    height: 25px;
-}
-#Dropdownb{
-    width:260px;
-    margin-bottom: 20px;
-    height: 25px;
+    background: #f1f1f1;
+  };
+
 }
 #drop{
     padding-bottom: 100px;
@@ -138,3 +87,58 @@ html,body
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 } 
 /*Adding a image from th above link with given coordinates and color*/
+
+*{box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+
+}
+
+/* Full-width input fields */
+input[type=text], input[type=time] {
+    width:100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  };
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Add padding to containers */
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+
+
+ 
