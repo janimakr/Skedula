@@ -61,13 +61,52 @@
     <button onclick="myFunction()" class="dropbtn">Edit
     </button>
     <div id="myDropdown" class="dropdown-content">
-      <a href="#home">Patient</a>
-      <a href="#about">Doctor</a>
-      <a href="#contact">Receptionist</a>
+      <a id="demo" href="#patient" onclick="myFunctionq()">Patient</a>
+      <a href="#doctor">Doctor</a>
+      <a href="#recep">Receptionist</a>
     </div>
   </div>
   <div>
-  
+    <div id="demox">
+      <body>
+        <div class="schedulebox"> <!--creating a class called login box-->
+        
+            <h1>Please fill the details</h1>
+            <form action="" method="">
+                <p>Patient ID</p>
+                <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
+                <p>Date</p>
+                <input type="date" id="myDate">
+                <p>Time </p>
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                <p>Specialization</p>
+                
+                <select id="dropdown">
+                    <option value="spec1">spec1</option>
+                    <option value="spec2">spec2</option>
+                    <option value="spec3">spec3</option>
+                    <option value="spec4">spec4</option>
+                    <option value="spec5">spec5</option>
+                  </select>
+                  
+                      <p>Doctor</p>
+                         
+                        <select id="dropdown">
+                            <option value="doc1">doc1</option>
+                            <option value="doc2">doc2</option>
+                            <option value="doc3">doc3</option>
+                            <option value="doc4">doc4</option>
+                            <option value="doc5">doc5</option>
+                          </select>
+                 
+                <input type="submit" name="Book" value="Update Patient Information">
+            
+            </form>
+        </div>
+    </body>
+    </html>
+    
+    </div>
   <script>
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
@@ -88,130 +127,22 @@
       }
     }
   }
-  </script>
   
+  </script>
+ <script>
+  function myFunctionq() {
+    var x = document.getElementById("demox");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
  
-<script>
-    
-</script>
-<form id="regForm" action="">
 
- 
     
-    <!-- One "tab" for each step in the form: -->
-    <div class="tab" style="width: 300px;">
-      <p><input placeholder="First name..." oninput="this.className = ''"></p>
-      <p><input placeholder="Last name..." oninput="this.className = ''"></p>
-    
-    
-      <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
-      <p><input placeholder="Phone..." oninput="this.className = ''"></p>
-    
-    
-      <p><input placeholder="dd" oninput="this.className = ''"></p>
-      <p><input placeholder="mm" oninput="this.className = ''"></p>
-      <p><input placeholder="yyyy" oninput="this.className = ''"></p>
-   
-    
-     
-      <p><input placeholder="Username..." oninput="this.className = ''"></p>
-      <p><input placeholder="Password..." oninput="this.className = ''"></p>
-    </div>
-    
-   <!--<div style="overflow:auto;">
-      <div style="float:left;">
-        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-       
-      </div>
-      <div style ="float:left;">
-        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-      </div>
-      
-    </div> // -->
-    
-    <!-- Circles which indicates the steps of the form: -->
-    <div style="text-align:center;margin-top:40px;">
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-      <span class="step"></span>
-    </div>
-    
-    </form>
 
-    <script>var currentTab = 0; // Current tab is set to be the first tab (0)
-        showTab(currentTab); // Display the current tab
-        
-        function showTab(n) {
-          // This function will display the specified tab of the form ...
-          var x = document.getElementsByClassName("tab");
-          x[n].style.display = "block";
-          // ... and fix the Previous/Next buttons:
-          if (n == 0) {
-            document.getElementById("prevBtn").style.display = "none";
-          } else {
-            document.getElementById("prevBtn").style.display = "inline";
-          }
-          if (n == (x.length - 1)) {
-            document.getElementById("nextBtn").innerHTML = "Submit";
-          } else {
-            document.getElementById("nextBtn").innerHTML = "Next";
-          }
-          // ... and run a function that displays the correct step indicator:
-          fixStepIndicator(n)
-        }
-        
-        function nextPrev(n) {
-          // This function will figure out which tab to display
-          var x = document.getElementsByClassName("tab");
-          // Exit the function if any field in the current tab is invalid:
-          if (n == 1 && !validateForm()) return false;
-          // Hide the current tab:
-          x[currentTab].style.display = "none";
-          // Increase or decrease the current tab by 1:
-          currentTab = currentTab + n;
-          // if you have reached the end of the form... :
-          if (currentTab >= x.length) {
-            //...the form gets submitted:
-            document.getElementById("regForm").submit();
-            return false;
-          }
-          // Otherwise, display the correct tab:
-          showTab(currentTab);
-        }
-        
-        function validateForm() {
-          // This function deals with validation of the form fields
-          var x, y, i, valid = true;
-          x = document.getElementsByClassName("tab");
-          y = x[currentTab].getElementsByTagName("input");
-          // A loop that checks every input field in the current tab:
-          for (i = 0; i < y.length; i++) {
-            // If a field is empty...
-            if (y[i].value == "") {
-              // add an "invalid" class to the field:
-              y[i].className += " invalid";
-              // and set the current valid status to false:
-              valid = false;
-            }
-          }
-          // If the valid status is true, mark the step as finished and valid:
-          if (valid) {
-            document.getElementsByClassName("step")[currentTab].className += " finish";
-          }
-          return valid; // return the valid status
-        }
-        
-        function fixStepIndicator(n) {
-          // This function removes the "active" class of all steps...
-          var i, x = document.getElementsByClassName("step");
-          for (i = 0; i < x.length; i++) {
-            x[i].className = x[i].className.replace(" active", "");
-          }
-          //... and adds the "active" class to the current step:
-          x[n].className += " active";
-        }
-        </script>
 <!-- bringing in the scripts like jquery in, for getting the moving parts like dropdowns and collapsing the navbar for mobile devices,Supports Bootstrap frontend framework-->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
