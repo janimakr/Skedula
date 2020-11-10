@@ -1,6 +1,3 @@
-
-
-
 /*modifying the background details*/
 body{
     margin-left:50px;
@@ -145,7 +142,7 @@ a {
 
 /* The popup form - hidden by default */
 .navbar{
-	font-family: ROBOTO;
+    font-family: ROBOTO;
     background-color: #53acca;
     padding-left: 50px !important;
    padding-right: 50px ;
@@ -160,9 +157,9 @@ font-size: 30px;
     color: #010405a4; 
 } 
 .navbar-brand,.navbar-nav {
-	color: rgb(2, 3, 5);
-	font-size:18px ;
-	font-family: "ROBOTO";
+    color: rgb(2, 3, 5);
+    font-size:18px ;
+    font-family: "ROBOTO";
 }
 
 .form-popup {
@@ -225,7 +222,20 @@ font-size: 30px;
   opacity: 1;
 }
 
+/*css for the hidden doctors*/
 
-
-
- 
+#doc1 {
+    display: none;
+}
+#doc2 {
+    display: none;
+}
+#doc3 {
+    display: none;
+}
+#doc4 {
+    display: none;
+}
+#doc5 {
+    display: none;
+}
