@@ -1,16 +1,15 @@
 
-.navbar{
-font-family: ROBOTO
-}
+
 
 /*modifying the background details*/
 body{
-    margin: 0;
+    margin-left:50px;
     padding: 0; 
     background: url("./schedulebg.png");
     background-size:cover;
     background-position: center;
     font-family: ROBOTO
+    
 }
 
 /*defining the features of logo*/
@@ -34,10 +33,21 @@ h1{
 }
 /*others*/
 
+.appform{
+  display:block;
+  text-align:left;
+  display:inline-block;
+  width:700px;
+  margin-left: 30%;
+   margin-right: 50%;
+}
 
-
+.active  {
+  background-color: #3c93ad;
+}
 #Dropdownform{
-    width:100%;
+    align-content: center;
+    width:70%;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
@@ -51,27 +61,9 @@ h1{
     width: 200px
 }
 
-#cpr{
-    padding-left: 36%;
-    padding-top: 10%;
-    font-family: ROBOTO;
-}
-
-ul.nav a:hover {
-    color: rgb(29, 147, 243);
-}
-.navbar{
-	font-family: ROBOTO;
-	background-color:rgb(29, 147, 243);
-}
-.navbar-brand,.navbar-nav li a{
-	color: aliceblue;
-	font-size:18px ;
-	font-family: "ROBOTO";
-}
 
 html,body
-{
+{   
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -80,25 +72,15 @@ html,body
 }
 
 
-.navbar-toggle { 
-	border-color: white; 
-	background-image: url(
-         
-"data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-} 
-/*Adding a image from th above link with given coordinates and color*/
 
 *{box-sizing: border-box}
 
 /* Add padding to containers */
-.container {
-  padding: 16px;
-
-}
 
 /* Full-width input fields */
 input[type=text], input[type=time] {
-    width:100%;
+    width:70%;
+    
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
@@ -115,6 +97,8 @@ input[type=text]:focus, input[type=password]:focus {
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 /* Add padding to containers */
@@ -126,8 +110,11 @@ hr {
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 70%;
   opacity: 0.9;
+  margin-left: 15%;
+  margin-right: 30%;
+  margin-top: 50px;
 }
 
 .registerbtn:hover {
@@ -138,6 +125,106 @@ hr {
 a {
   color: dodgerblue;
 }
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(63, 158, 202);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+ 
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* The popup form - hidden by default */
+.navbar{
+	font-family: ROBOTO;
+    background-color: #53acca;
+    padding-left: 50px !important;
+   padding-right: 50px ;
+    
+}
+.navbar-brand {
+font-size: 30px;
+
+}
+/* Modify brand and text color */ 
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text,.navbar-nav li a { 
+    color: #010405a4; 
+} 
+.navbar-brand,.navbar-nav {
+	color: rgb(2, 3, 5);
+	font-size:18px ;
+	font-family: "ROBOTO";
+}
+
+.form-popup {
+  
+        
+        display:none;
+        top:100px; 
+        right:60%;
+        left:39%;
+        width:300px;
+        position:fixed; 
+        z-index: 2000;
+        padding:30px; 
+        -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+        -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+        box-shadow:0 0 10px rgba(0,0,0,0.4)
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #3c93ad;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:#2e748a;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
 
 
 

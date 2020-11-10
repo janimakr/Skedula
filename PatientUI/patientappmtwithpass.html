@@ -1,138 +1,69 @@
   
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!-- initializing width for devices -->
-  <!-- This gives the browser instructions on how to control the page's dimensions and scaling -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">   <!--Initial zoom level specified by initial scale=1--> 
-  <title>Book Appointment</title>
-  <!-- Bringing in the Bootrstap CDN -->
-   <!-- Bringing in the Bootrstap CDN-Content Delivery Network; Basiacally adding Bootstrap Cdn to get the basic str instead of downloading and hosting bootstrap on the device -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
-  <!-- linking the CSS -->
-  <link rel="stylesheet" type="text/css" href="./patientappmt.css">
-  <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  text-align: center;
-}
-
-/* Modal Content */
-.modal-content {
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  background-image: url("./FooterBG.jpg")
-}
-/*model content is the box that pops up*/
-
-/* The Close Button */
-.close {
-  background-color: #1BBA93;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #42d1f5;
-  text-decoration: none;
-  cursor: pointer;
-
-
-}
-
-/*Cahnge button*/
-#pill1 {
-  background-color: #1BBA93;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-
-#pill1:hover {
-  background-color: #42d1f5;
-}
-</style>
+<title>Book Appointment</title>
+<link rel="stylesheet" type="text/css" href="./patientappmt.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-  <!-- initialize the navbar -->
-  <div class='design'><!--Class for modifying the nav bar ribbon-->
-  <nav class="navbar navbar-custom">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <!--Data Toggle define the kind of toggling to be included-->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<body>
+  <nav class="navbar navbar-custom">
+    <div class="container-fluid">
+      
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Book Appointment</a></li>
-        <li><a href="#">Reschedule</a></li>
-        <li><a href="#">Reports</a></li>
+        <li><a href="./homepgwithpass.html">Home</a></li>
+        <li class="active"><a href="#">New Appointment</a></li>
+        <li><a href="./Patientrschwithpass.html">Reschedule</a></li>
+        <li><a href="./patientrptswithpass.html">Reports</a></li>
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-                    <img src="./DOCTOR 3.jpg" alt="Picture">
-                        <p Style="color:#008B8B">Doctor 3</p>
-                        <p><a href="#" type="button" id="myBtn" style="color:#008B8B" >Change Password</a></p>
-          </ul>
-        </li>
-        <li><a href="#">Logout</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-<form action="action_page.php">
-  <div class="container">
-    <div  class="Logo1"><img src="./Logo.png" alt="Logo" class="Logo"><!--creating a logo class to modify the logo--></div>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                      <h3 Style="color:#0d6161" align="center">Patient Name</h3>
+                      <p><button class="open-button" onclick="openForm()">Change Password</button>
   
-      
-    <h1>New Appointment</h1>
-    <p>Please fill in this form to book an Appointment</p>
-    <hr>
-    <p>Patient ID</p>
-    <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
+                      </p>
+                      
+        </ul>
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h3>Change Password</h3>
+            <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+            <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+        
+            <button type="submit" class="btn">Confirm</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+           
+        <li><a href="../Login/loginPage.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  
 
-    
-    <p>Specialization</p>
-    
-    <select id="Dropdownform" id='drop' required>
+  
+  <div class="container">
+    <div  class="Logo1">
+      <img src="./Logo.png" alt="Logo" class="Logo"><!--creating a logo class to modify the logo-->
+    </div>
+    <h1>New Appointment</h1>
+    <p align="center">Please fill in this form to book an Appointment</p>
+    <hr>
+    <div class="appform">
+      <p>Patient ID</p>
+      <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
+      <p>Specialization</p>
+      <select id="Dropdownform" id='drop' required>
         <option value="" disabled selected>Select the required specialization</option>
         <option value="spec1">spec1</option>
         <option value="spec2">spec2</option>
@@ -140,85 +71,43 @@ body {
         <option value="spec4">spec4</option>
         <option value="spec5">spec5</option>
       </select>
-      
-          <p>Doctor</p>
-             
-            <select id="Dropdownform" id='drop' required>
-                <option value="" disabled selected>Select your preferred doctor</option>
-                <option value="doc1">Dr. ABC</option>
-                <option value="doc2">Dr. PQR</option>
-                <option value="doc3">Dr. XYZ</option>
-                <option value="doc4">Dr. OTP</option>
-                <option value="doc5">Dr. VPN</option>
-              </select>
-              <p>Time </p>
-    <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
-  <div id="book">
-
-    
-    <button type="submit" class="registerbtn">Book Appointment</button></div>
- <form>
-   
-
-    
+      <p>Doctor</p>
+      <select id="Dropdownform" id='drop' required>
+        <option value="" disabled selected>Select your preferred doctor</option>
+        <option value="doc1">Dr. ABC</option>
+        <option value="doc2">Dr. PQR</option>
+        <option value="doc3">Dr. XYZ</option>
+        <option value="doc4">Dr. OTP</option>
+        <option value="doc5">Dr. VPN</option>
+      </select>
+      <p>Time </p>
+      <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
+    </div>
+    <div id="book">
+      <button type="submit" class="registerbtn">Book Appointment</button>
+    </div>
+  </div>  
   <div class="row">
-      <div class="col-sm-12">
-        <p align=right id='cpr'>COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED</p>
-      </div>
+    <div class="col-sm-12">
+      <p align=right id='cpr'>COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED</p>
     </div>
+  </div>
 
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <!-- <span class="close">&times;</span>
-        <input type="text" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
-        <input type="text" name="confirmpass" type="password" placeholder="Confirm Password" required>
-        <a href="#" type="button" id="pill1">Change</a> -->
-        <form action="" method="" form id="myForm">
-          <span class="close">&times;</span>
-          <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
-          <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" required>
-          <input type="submit" name="login" value="Change" id="pill1">
-        </form>
-      </div>
     
-    </div>
-  
     <script>
-      // Get the modal-->password box pop up
-      var modal = document.getElementById("myModal");
-      
-      // Get the button that opens the modal--->change password
-      var btn = document.getElementById("myBtn");
-      
-      // Get the <span> element that closes the modal-->close button
-      var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal--> Function definition's ahead 
-      btn.onclick = function() {
-        modal.style.display = "block";
-      }
-      
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
-        document.getElementById("myForm").reset(); 
-        modal.style.display = "none";
         
-      }
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          document.getElementById("myForm").reset();
-          modal.style.display = "none";
-        }
-      }
+
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
       </script>
       
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
+  
   
 </body>
 </html>
