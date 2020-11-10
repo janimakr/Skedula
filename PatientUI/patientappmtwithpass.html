@@ -63,7 +63,7 @@
       <p>Patient ID</p>
       <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
       <p>Specialization</p>
-      <select id="Dropdownform" id='drop' required>
+      <select id="Dropdownform" id='drop' onchange="showDiv(this)" required>
         <option value="" disabled selected>Select the required specialization</option>
         <option value="spec1">spec1</option>
         <option value="spec2">spec2</option>
@@ -71,15 +71,82 @@
         <option value="spec4">spec4</option>
         <option value="spec5">spec5</option>
       </select>
-      <p>Doctor</p>
-      <select id="Dropdownform" id='drop' required>
-        <option value="" disabled selected>Select your preferred doctor</option>
-        <option value="doc1">Dr. ABC</option>
-        <option value="doc2">Dr. PQR</option>
-        <option value="doc3">Dr. XYZ</option>
-        <option value="doc4">Dr. OTP</option>
-        <option value="doc5">Dr. VPN</option>
+
+      <div id='doc1'>
+
+              <p>Doctor</p>
+                   
+                  <select id="Dropdownform" id='drop' id='doc1' required>
+                      <option value="" disabled selected>Select your preferred doctor</option>
+                      <option value="doc1">Dr. ABC1</option>
+                      <option value="doc2">Dr. PQR1</option>
+                      <option value="doc3">Dr. XYZ1</option>
+                      <option value="doc4">Dr. OTP1</option>
+                      <option value="doc5">Dr. VPN1</option>
+                  </select>
+
+    </div>
+
+      <div id='doc2'>
+
+              <p>Doctor</p>
+
+      <select id="Dropdownform" id='drop' id='doc2' required>
+                      <option value="" disabled selected>Select your preferred doctor</option>
+                      <option value="doc1">Dr. ABC2</option>
+                      <option value="doc2">Dr. PQR2</option>
+                      <option value="doc3">Dr. XYZ2</option>
+                      <option value="doc4">Dr. OTP2</option>
+                      <option value="doc5">Dr. VPN2</option>
       </select>
+
+    </div>
+
+      <div id='doc3'>
+
+              <p>Doctor</p>
+
+      <select id="Dropdownform" id='drop' required>
+                      <option value="" disabled selected>Select your preferred doctor</option>
+                      <option value="doc1">Dr. ABC3</option>
+                      <option value="doc2">Dr. PQR3</option>
+                      <option value="doc3">Dr. XYZ3</option>
+                      <option value="doc4">Dr. OTP3</option>
+                      <option value="doc5">Dr. VPN3</option>
+      </select>
+
+    </div>
+
+      <div id='doc4'>
+
+              <p>Doctor</p>
+
+      <select id="Dropdownform" id='drop' required>
+                      <option value="" disabled selected>Select your preferred doctor</option>
+                      <option value="doc1">Dr. ABC4</option>
+                      <option value="doc2">Dr. PQR4</option>
+                      <option value="doc3">Dr. XYZ4</option>
+                      <option value="doc4">Dr. OTP4</option>
+                      <option value="doc5">Dr. VPN4</option>
+      </select>
+
+    </div>
+
+      <div id='doc5'>
+
+              <p>Doctor</p>
+
+      <select id="Dropdownform" id='drop' required>
+                      <option value="" disabled selected>Select your preferred doctor</option>
+                      <option value="doc1">Dr. ABC5</option>
+                      <option value="doc2">Dr. PQR5</option>
+                      <option value="doc3">Dr. XYZ5</option>
+                      <option value="doc4">Dr. OTP5</option>
+                      <option value="doc5">Dr. VPN5</option>
+      </select>
+
+      </div>
+     
       <p>Time </p>
       <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
     </div>
@@ -104,6 +171,23 @@
     function closeForm() {
       document.getElementById("myForm").style.display = "none";
     }
+
+      </script>
+
+      <!-- JavaScript for fetching the elements of each specification and associating them with the corresponding doctor -->
+
+      <script type="text/javascript">
+
+        function showDiv(element)
+        {
+          document.getElementById('doc1').style.display = element.value == "spec1" ? 'block' : 'none';
+          document.getElementById('doc2').style.display = element.value == "spec2" ? 'block' : 'none';
+          document.getElementById('doc3').style.display = element.value == "spec3" ? 'block' : 'none';
+          document.getElementById('doc4').style.display = element.value == "spec4" ? 'block' : 'none';
+          document.getElementById('doc5').style.display = element.value == "spec5" ? 'block' : 'none';
+        }
+
+        
 
       </script>
       
