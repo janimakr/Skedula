@@ -3,16 +3,16 @@
 }
 .name{
     font-size:30px;
-    color:#29abe2;
+    color:#53acca;
     ;
     font-weight: bold;
 }
 ul.nav a:hover {
-    color: rgb(29, 147, 243);
+    color: #53acca;
 }
 .navbar{
 	font-family: ROBOTO;
-	background-color:rgb(29, 147, 243);
+	background-color:#53acca;
 }
 .navbar-brand,.navbar-nav li a{
 	color: aliceblue;
@@ -108,4 +108,30 @@ ul.nav a:hover {
   "data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   } 
   /*Adding a image from th above link with given coordinates and color*/
+   /* The popup form - hidden by default */
+   .navbar{
+    font-family: ROBOTO;
+    background-color: #53acca;
+    padding-left: 10px !important;
+   padding-right: 10px ;
+    
+}
+.navbar-brand {
+font-size: 30px;
+
+}
+/* Modify brand and text color */ 
+.navbar-custom .navbar-brand, .navbar-custom .navbar-text,.navbar-nav li a { 
+    color: #010405a4; 
+} 
+.navbar-brand,.navbar-nav {
+    color: rgb(2, 3, 5);
+    font-size:18px ;
+    font-family: "ROBOTO";
+}
+/*for the form to come after clicking update*/
+#form1 {
+
+  display:none;
   
+  }
