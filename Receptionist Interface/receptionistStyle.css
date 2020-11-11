@@ -61,7 +61,7 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: 34px;
-    color: #05775b;
+    color: #7a839b;
     text-align: left;
     border: 1px solid #d6d6d6;
     font-family: Arial, Helvetica, sans-serif;
@@ -79,7 +79,7 @@ body {
     margin: 20px;
     width: 300px;
     height: 40px;
-    background: #1BBA93;
+    background: #1c2541;
     color: #fcfcfc;
     font-size: 18px;
     border-radius: 120px;
@@ -92,10 +92,9 @@ body {
 .form-body input[type="submit"]:hover
 {
     cursor: pointer;
-    background: #42d1f5;
-    color: #000;
+    background: #4962ab;
+    color: white;
 }
-
 .logo{
     width: 125px;
 }
@@ -106,20 +105,21 @@ body {
     font-weight: bold;
 }
 ul.nav a:hover {
-    background-color: rgb(13, 110, 189);
+    background-color: rgb(104, 164, 212);
 }
 .navbar{
 	font-family: ROBOTO;
-    background-color:rgb(29, 147, 243);
+    background-color:#1c2541;
 
 }
 .navbar-custom .navbar-nav>.open>a {
     background-color: rgb(13, 110, 189);
  }
 .navbar-brand,.navbar-nav li a{
-	color: aliceblue;
+    color:#d4d1d1;
+
 	font-size:18px ;
-	font-family: "ROBOTO";
+	font-family: Arial, Helvetica, sans-serif;
 }
   .navbar-toggle { 
 	border-color: rgb(15, 14, 14); 
