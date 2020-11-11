@@ -22,12 +22,7 @@ body {
     padding-bottom: 5%;
 }
 
-.FormContainers:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+
 .GroupRight,.GroupLeft{
     width:50%;
     float: left;
@@ -118,6 +113,9 @@ ul.nav a:hover {
     background-color:rgb(29, 147, 243);
 
 }
+.navbar-custom .navbar-nav>.open>a {
+    background-color: rgb(13, 110, 189);
+ }
 .navbar-brand,.navbar-nav li a{
 	color: aliceblue;
 	font-size:18px ;

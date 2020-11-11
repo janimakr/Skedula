@@ -21,14 +21,12 @@ body{
     padding-left: 44%;
 }
 
-/*defining featurs of contents inside the login box*/
-/*Welcome*/
+
 h1{
     padding-bottom: 3%;
     text-align: center;
     font-size: 22px;
 }
-/*others*/
 
 .appform{
   display:block;
@@ -52,7 +50,7 @@ h1{
     background: #f1f1f1;
   };
 
-}
+
 #drop{
     padding-bottom: 100px;
     width: 200px
