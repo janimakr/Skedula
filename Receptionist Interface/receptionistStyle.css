@@ -32,11 +32,6 @@ body {
     width:50%;
     float: left;
 }
-@media screen and (max-width: 100%) {
-    .GroupRight,.GroupLeft {
-      width: 100%;
-    }
-  }
 .GroupLeft{
     padding-left: 15%;
 
@@ -79,7 +74,9 @@ body {
     outline: none;
     
 }
-
+.dropdown-menu{
+    width: 220px;
+}
 .form-body input[type="submit"]
 {
     border: none;
@@ -114,7 +111,7 @@ body {
     font-weight: bold;
 }
 ul.nav a:hover {
-    color: rgb(29, 147, 243);
+    background-color: rgb(13, 110, 189);
 }
 .navbar{
 	font-family: ROBOTO;
@@ -127,7 +124,7 @@ ul.nav a:hover {
 	font-family: "ROBOTO";
 }
   .navbar-toggle { 
-	border-color: white; 
+	border-color: rgb(15, 14, 14); 
 	background-image: url(
          
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
