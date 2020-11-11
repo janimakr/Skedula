@@ -1,50 +1,15 @@
-body{background: #e0e0e0ef;
-    font-family: ROBOTO
+body{background: #ffffff;;
+    font-family: ROBOTO;
 }
-
 h1{
     font-size: 2.3em;
 
     font-weight: 700px;
 }
-
 #title{
         color: #075563;
         padding-bottom: 15px;
-        font-family: Roboto;
     }
-
-.content1{
-    margin-top: 3px;
-    font-family: ROBOTO;
-    font-size: 1.35em;
-    color: #000000;  
-    background : #148dac;
-    padding: 10px;
-    border-radius: 40px
-      
-   
-       
-       }
-.content2{
-    font-family: ROBOTO;
-    font-size: 1.35em;
-    background :#2890aa;
-    padding: 10px;
-    color: #000000;   
-    margin-top: 3px;  
-    border-radius: 40px
-       
-}
-.content3{
-    font-family: ROBOTO;
-    font-size: 1.35em;
-    background : #19778f;
-    padding: 10px;
-    color: #000000;   
-    margin-top: 4px;
-    border-radius: 40px
-}
 
 /*defining the features of logo*/
 .center {
@@ -52,46 +17,39 @@ h1{
     margin-left: auto;
     margin-right: auto;
     height: 177px
-        
   }
 
-    .buttons input[type="button"]
+  input[type=button]
+  {
+    outline: none;
+    height: 40px;
+    background:  #045b68;
+    width:120px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+input[type=time]
 {
     border: none;
     outline: none;
     height: 40px;
-    background: #1BBA93;
-    color: #fff;
+    background: #0b6e7e;
+    width:80px;
     font-size: 18px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
-.buttons input[type="button"]:hover
+input[type=button], input[type=time]:hover
 {
     cursor: pointer;
-    background: #42d1f5 ;
-    color: #000;
+    background: #0b6e7e;
+   
 }
-
 
 .navbar-toggle { 
     border-color: white; 
     background-image: url( 
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 } 
-
-/*start dropdown color fix*/
-
-ul.nav a:focus {
-    background-color: rgb(29, 147, 243);
-    color: white
-}
-
-ul.nav a:hover {
-    color: rgb(29, 147, 243);
-    background-color: white
-}
-
-/*end dropdown color fix*/
 
 html,body
 {
@@ -112,4 +70,90 @@ ul.nav a:hover {
     color: aliceblue;
     font-size:18px ;
     font-family: "ROBOTO";
+}
+
+
+#tile {
+  width: 320px;
+  height: 96px;
+  margin: auto;
+  background-color: #002147;
+  border-radius: 17px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(224,229,240);
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.1);
+}
+
+#reporting-icon {
+  float: left;
+  margin: 25px;
+}
+
+#line-vr {
+  float: left;
+  width: 1px;
+  height: 96px;
+  background-color: #e7e7e7;
+}
+
+
+#header-text {
+  display:block;
+  margin-top: 25px;
+  margin-left: 125px;
+  display:block;
+  font: 20px/24px Helvetica Neue LT Com, sans-serif;
+}
+
+#header-text p{
+    color: white;
+
+}
+
+
+#arrow-icon {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+#text {
+  float: left;
+  margin-top: -8px;
+  padding-left: 7%;
+  padding-top: 3%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #404040;
+}
+
+.text-link {
+  font: 17px Helvetica Neue LT Com, sans-serif;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 4px;
+  margin-left: 3%
+}
+
+.text-link:hover {  
+  opacity:1;
+}
+
+hr{
+width:35%;
+border: 1px solid #1BBA93;
+}
+
+#tile img{
+    border-radius: 50%
 }
