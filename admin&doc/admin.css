@@ -41,41 +41,7 @@ font-family: "ROBOTO";
 form{
   margin: 20px;
 }
-.schedulebox p{
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-}
-.schedulebox input{
-  width: 100%;
-  margin-bottom: 20px;
-}
-.schedulebox input[type="text"], input[type="password"], input [type="time"], input [type="date"]
-{
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-}
-.schedulebox input[type="submit"]
-{
-  border: none;
-  outline: none;
-  height: 40px;
-  background: #2f9599;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 20px;
-}
-.schedulebox input[type="submit"]:hover
-{
-  cursor: pointer;
-  background:rgb(93,188,210);
-  color: #000;
-}
+
 #dropdown{
   margin: 15px;
   padding-bottom: 8px;
@@ -221,6 +187,27 @@ left:900px;
 .step.finish {
   background-color: #4CAF50;
 }
+ /* css for patient*/
+#demox {
+
+  display:none;
+  
+  
+  }
+ #eemox {
+
+  display:none;
+   
+    
+    }
+     /*for patient*/
+#femox {
+
+    display:none;
+    
+      
+      }
+
 .navbar-toggle { 
 	border-color: white; 
 	background-image: url(
