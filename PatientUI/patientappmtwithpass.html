@@ -17,7 +17,8 @@
     <div class="container-fluid">
       
       <ul class="nav navbar-nav">
-        <li><a href="./homepgwithpass.html">Home</a></li>
+        <li><a href="./homepgwithpass.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
+        </li>
         <li class="active"><a href="#">New Appointment</a></li>
         <li><a href="./Patientrschwithpass.html">Reschedule</a></li>
         <li><a href="./patientrptswithpass.html">Reports</a></li>
@@ -27,14 +28,14 @@
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile<span class="caret"></span></a>
               <ul class="dropdown-menu">
                       <h3 Style="color:#0d6161" align="center">Patient Name</h3>
-                      <p><button class="open-button" onclick="openForm()">Change Password</button>
+                      <p><button class="open-button"  onclick="openForm()">Change Password</button>
   
                       </p>
                       
         </ul>
         <div class="form-popup" id="myForm">
           <form action="" class="form-container">
-            <h3>Change Password</h3>
+            <h3 Style="color:#0d6161">Change Password</h3>
             <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
             <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
         
@@ -43,7 +44,7 @@
           </form>
         </div>
            
-        <li><a href="../Login/loginPage.html"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+        <li><a href="../Login/loginPage.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
       </ul>
     </div>
   </nav>
@@ -53,16 +54,15 @@
 
   
   <div class="container">
-    <div  class="Logo1">
-      <img src="./Logo.png" alt="Logo" class="Logo"><!--creating a logo class to modify the logo-->
-    </div>
+    <div style="text-align: center"><img src="../logofinal.png" alt="logo" class="logo"></div><!--creating a logo class to modify the logo-->
+    
     <h1>New Appointment</h1>
-    <p align="center">Please fill in this form to book an Appointment</p>
+    <p align="center" class="title">Please fill in this form to book an Appointment</p>
     <hr>
     <div class="appform">
-      <p>Patient ID</p>
-      <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
-      <p>Specialization</p>
+      <p class="title" >Patient ID</p>
+      <input type="text" name="Uname" Style="color:#000000" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
+      <p class="title">Specialization</p>
       <select id="Dropdownform" id='drop' onchange="showDiv(this)" required>
         <option value="" disabled selected>Select the required specialization</option>
         <option value="spec1">spec1</option>
@@ -74,7 +74,7 @@
 
       <div id='doc1'>
 
-              <p>Doctor</p>
+              <p class="title">Doctor</p>
                    
                   <select id="Dropdownform" id='drop' id='doc1' required>
                       <option value="" disabled selected>Select your preferred doctor</option>
@@ -85,14 +85,14 @@
                       <option value="doc5">Dr. VPN1</option>
                   </select>
 
-                  <p>Time </p>
+                  <p class="title">Time </p>
                   <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
 
     </div>
 
       <div id='doc2'>
 
-              <p>Doctor</p>
+              <p class="title">Doctor</p>
 
       <select id="Dropdownform" id='drop' id='doc2' required>
                       <option value="" disabled selected>Select your preferred doctor</option>
@@ -103,14 +103,14 @@
                       <option value="doc5">Dr. VPN2</option>
       </select>
 
-      <p>Time </p>
+      <p class="title">Time </p>
       <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
 
     </div>
 
       <div id='doc3'>
 
-              <p>Doctor</p>
+              <p class="title">Doctor</p>
 
       <select id="Dropdownform" id='drop' required>
                       <option value="" disabled selected>Select your preferred doctor</option>
@@ -121,14 +121,14 @@
                       <option value="doc5">Dr. VPN3</option>
       </select>
 
-      <p>Time </p>
+      <p class="title">Time </p>
       <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
 
     </div>
 
       <div id='doc4'>
 
-              <p>Doctor</p>
+              <p class="title">Doctor</p>
 
       <select id="Dropdownform" id='drop' required>
                       <option value="" disabled selected>Select your preferred doctor</option>
@@ -139,14 +139,14 @@
                       <option value="doc5">Dr. VPN4</option>
       </select>
 
-      <p>Time </p>
+      <p class="title">Time </p>
       <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
 
     </div>
 
       <div id='doc5'>
 
-              <p>Doctor</p>
+              <p class="title">Doctor</p>
 
       <select id="Dropdownform" id='drop' required>
                       <option value="" disabled selected>Select your preferred doctor</option>
@@ -157,7 +157,7 @@
                       <option value="doc5">Dr. VPN5</option>
       </select>
 
-      <p>Time </p>
+      <p class="title">Time </p>
       <input type="time"  id="appt" name="appt" min="09:00" max="18:00" required>
 
       </div>
@@ -172,7 +172,7 @@
       <p align=right id='cpr'>COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED</p>
     </div>
   </div>
-
+</div>
     
     <script>
         

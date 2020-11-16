@@ -1,24 +1,18 @@
 /*modifying the background details*/
 body{
-    margin-left:50px;
+    
     padding: 0; 
     background: url("./schedulebg.png");
     background-size:cover;
     background-position: center;
-    font-family: ROBOTO
+    font-family: Helvetica;
     
 }
 
 /*defining the features of logo*/
-.Logo{
-    width: 150px;
-    height: 150px;
-    padding-top: 30px;
-}
 
-.Logo1{
-    padding-bottom: 1%;
-    padding-left: 44%;
+.logo{
+  width: 220px;
 }
 
 
@@ -35,11 +29,18 @@ h1{
   width:700px;
   margin-left: 30%;
    margin-right: 50%;
+   
 }
-
+.title{
+color:#033f30;
+font-size: 17px;
+font-weight: bold;
+margin-bottom: 2px;
+display: block;
+}
 .active  {
-  background-color: #3c93ad;
-}
+  background-color:  #3a506b; }
+
 #Dropdownform{
     align-content: center;
     width:70%;
@@ -75,17 +76,18 @@ html,body
 /* Full-width input fields */
 input[type=text], input[type=time] {
     width:70%;
-    
+    color:#3a506b;
     padding: 15px;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
     background: #f1f1f1;
-  };
+  }
 
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
+  color:#3a506b;
 }
 
 /* Overwrite default styles of hr */
@@ -99,33 +101,38 @@ hr {
 /* Add padding to containers */
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: #4CAF50;
+  background: #222c4d;
+
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 70%;
-  opacity: 0.9;
+  opacity: 1;
   margin-left: 15%;
   margin-right: 30%;
   margin-top: 50px;
 }
 
 .registerbtn:hover {
-  opacity:1;
-}
+  background: #4962ab;}
 
 /* Add a blue text color to links */
 a {
   color: dodgerblue;
 }
 
+ul.nav a:hover { color: #3a506b !important; }
 
-
+.navbar-brand,.navbar-nav li a{
+  color:#d4d1d1;
+font-size:18px ;
+font-family: Arial, Helvetica, sans-serif;
+}
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-  background-color: rgb(63, 158, 202);
+  background: #222c4d;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -137,13 +144,14 @@ a {
   margin-left: 20px;
   margin-right: 20px;
 }
-
+.open-button:hover {
+  background-color: #3a506b;
+}
 /* The popup form - hidden by default */
 .navbar{
     font-family: ROBOTO;
-    background-color: #53acca;
-    padding-left: 50px !important;
-   padding-right: 50px ;
+    background-color:#1c2541;
+  
     
 }
 .navbar-brand {
@@ -151,15 +159,17 @@ font-size: 30px;
 
 }
 /* Modify brand and text color */ 
-.navbar-custom .navbar-brand, .navbar-custom .navbar-text,.navbar-nav li a { 
-    color: #010405a4; 
-} 
-.navbar-brand,.navbar-nav {
-    color: rgb(2, 3, 5);
-    font-size:18px ;
-    font-family: "ROBOTO";
+.navbar-brand,.navbar-nav>.open>a {
+  background-color: #3a506b;
 }
-
+.navbar-brand,.navbar-nav {
+  color:#d4d1d1;
+	font-size:18px ;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-brand:hover{
+  background-color: #3a506b;
+}
 .form-popup {
   
         
@@ -200,7 +210,8 @@ font-size: 30px;
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #3c93ad;
+  background: #222c4d;
+
   color: white;
   padding: 16px 20px;
   border: none;
@@ -212,14 +223,13 @@ font-size: 30px;
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color:#2e748a;
+  background: #1c2541;
 }
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+  background: #4962ab;
 }
-
 /*css for the hidden doctors*/
 
 #doc1 {
