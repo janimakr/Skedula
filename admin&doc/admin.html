@@ -352,24 +352,30 @@
   }
   
   </script>
- <script>
+<script>
   function myFunction1() {
     var x = document.getElementById("demox");
+    var y = document.getElementById("eemox");
+    var z = document.getElementById("femox");
    
               if (x.style.display === "none" ) {
                 x.style.display = "block";
+                z.style.display = "none";
+                y.style.display = "none";
                 
               } else {
                 x.style.display = "none";
               }
             }
  function myFunction2() {
+  var x = document.getElementById("demox");
     var y = document.getElementById("eemox");
+    var z = document.getElementById("femox");
     
               if (y.style.display === "none" ) {
                 x.style.display = "none";
                 y.style.display = "block";
-                x.style.display = "none";
+                z.style.display = "none";
                 
               } else {
                 y.style.display = "none";
@@ -377,6 +383,8 @@
             }
  function myFunction3(){   
     var z = document.getElementById("femox");
+    var x = document.getElementById("demox");
+    var y = document.getElementById("eemox");
               if (z.style.display === "none" ) {
                 y.style.display = "none";
                 x.style.display = "none";
@@ -392,6 +400,7 @@
   
 
   </script>
+  
   
  
 
