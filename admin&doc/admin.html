@@ -239,8 +239,8 @@
                             <option value="doc4">doc4</option>
                             <option value="doc5">doc5</option>
                           </select>
-                 
-                <input type="submit" name="Book" value="Update Patient Information">
+                 <hr>
+                <button type="submit" class="registerbtn3">Update the changes</button>
             
             </form>
         </div>
@@ -255,33 +255,16 @@
         
             <h1>Please fill the details</h1>
             <form action="" method="">
-                <p>Patient ID</p>
-                <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
-                <p>Date</p>
-                <input type="date" id="myDate">
-                <p>Time </p>
-                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                <p>Specialization</p>
-                
-                <select id="dropdown">
-                    <option value="spec1">spec1</option>
-                    <option value="spec2">spec2</option>
-                    <option value="spec3">spec3</option>
-                    <option value="spec4">spec4</option>
-                    <option value="spec5">spec5</option>
-                  </select>
-                  
-                      <p>Doctor</p>
-                         
-                        <select id="dropdown">
-                            <option value="doc1">doc1</option>
-                            <option value="doc2">doc2</option>
-                            <option value="doc3">doc3</option>
-                            <option value="doc4">doc4</option>
-                            <option value="doc5">doc5</option>
-                          </select>
-                 
-                <input type="submit" name="Book" value="Update Patient Information">
+              <label for="time"><b>Start Time</b></label>
+              <input type="time" placeholder="Enter Time" name="email" id="email" required>
+          
+              <label for="time"><b>End time</b></label>
+              <input type="time" placeholder="Enter Time" name="psw" id="psw" required>
+          
+              <label for="time"><b>Max</b></label>
+              <input type="time" placeholder="Maximum" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+              <button type="submit" class="registerbtn3">Update the changes</button>
             
             </form>
         </div>
@@ -352,24 +335,30 @@
   }
   
   </script>
- <script>
+<script>
   function myFunction1() {
     var x = document.getElementById("demox");
+    var y = document.getElementById("eemox");
+    var z = document.getElementById("femox");
    
               if (x.style.display === "none" ) {
                 x.style.display = "block";
+                z.style.display = "none";
+                y.style.display = "none";
                 
               } else {
                 x.style.display = "none";
               }
             }
  function myFunction2() {
+  var x = document.getElementById("demox");
     var y = document.getElementById("eemox");
+    var z = document.getElementById("femox");
     
               if (y.style.display === "none" ) {
                 x.style.display = "none";
                 y.style.display = "block";
-                x.style.display = "none";
+                z.style.display = "none";
                 
               } else {
                 y.style.display = "none";
@@ -377,6 +366,8 @@
             }
  function myFunction3(){   
     var z = document.getElementById("femox");
+    var x = document.getElementById("demox");
+    var y = document.getElementById("eemox");
               if (z.style.display === "none" ) {
                 y.style.display = "none";
                 x.style.display = "none";
@@ -392,6 +383,7 @@
   
 
   </script>
+  
   
  
 
