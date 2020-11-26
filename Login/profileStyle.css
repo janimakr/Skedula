@@ -27,11 +27,11 @@ body {
 position: relative; }
 .logo{
     padding-top: 6%;
-    width: 30%;
+    width: 40%;
 }
 .name{
-    font-size:50px;
-    color:#1BBA93;
+    font-size:30px;
+    color:#1c2541;
     font-weight: bold;
 }
 .regform{
@@ -50,7 +50,7 @@ position: relative; }
     position: relative; } 
      
 .form-body .label-title {
-    color:#1BBA93;
+    color:#1c2541;
     font-size: 17px;
     font-weight: bold;
     margin-bottom: 2px;
@@ -73,7 +73,7 @@ position: relative; }
 }
 p{
     font-size: 10px;
-    color: #0c775c;
+    color: #1c2541;
 }
 .form-body input[type="submit"]
 {
@@ -82,7 +82,7 @@ p{
     margin: 20px;
     width: 300px;
     height: 40px;
-    background: #1BBA93;
+    background: #1c2541;
     color: #fcfcfc;
     font-size: 18px;
     border-radius: 120px;
