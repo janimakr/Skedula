@@ -9,16 +9,16 @@
 
                 <form action="../PatientUI/homepgwithpass.html" onsubmit="return checkpwd(this);" method="" class="regform">
                     <div class="form-body">
-                        <div style="text-align: center"><img src="./logo.png" alt="logo" class="logo"></div>
+                        <div style="text-align: center"><img src="./logof.png" alt="logo" class="logo"></div>
                         <div style="text-align: center" class="name">Skedula</div>
                         <div class=form-group>
                             <div class="form-groupL">
                                 <label for="firstname" class="label-title">First name *<br></label>
-                                <input type="text" name="firstname" id="firstname" class="form-input" required>
+                                <input type="text" name="firstname" id="firstname" class="form-input" maxlength="15" required>
                            </div>
                            <div class="form-groupL">
                                 <label for="lastname" class="label-title">Last name<br></label>
-                                <input type="text" name="lastname" id="lastname" class="form-input"/>
+                                <input type="text" name="lastname" id="lastname" maxlength="10" class="form-input"/>
                            </div>
                         </div>
                  
@@ -99,4 +99,3 @@
         }
     }
 </script> 
-    

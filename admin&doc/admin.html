@@ -14,159 +14,33 @@
 <body>
   <!-- initialize the navbar -->
   <div class='design'><!--Class for modifying the nav bar ribbon-->
-    <!DOCTYPE html>
-    <html lang="en">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <head>
-      <title>Bootstrap Example</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    
-    <style>
-    
-    .active  {
-      background-color: #3c93ad;
-    }
-    /* Button used to open the contact form - fixed at the bottom of the page */
-    .open-button {
-      background-color: rgb(63, 158, 202);
-      color: white;
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      opacity: 0.8;
-     
-      bottom: 23px;
-      right: 28px;
-      width: 280px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    
-    /* The popup form - hidden by default */
-    .navbar{
-      font-family: ROBOTO;
-        background-color: #53acca;
-        padding-left: 50px !important;
-       padding-right: 50px ;
-        
-    }
-    .navbar-brand {
-    font-size: 30px;
-    
-    }
-    /* Modify brand and text color */ 
-    .navbar-custom .navbar-brand, .navbar-custom .navbar-text,.navbar-nav li a { 
-        color: #010405a4; 
-    } 
-    .navbar-brand,.navbar-nav {
-      color: rgb(2, 3, 5);
-      font-size:18px ;
-      font-family: "ROBOTO";
-    }
-    
-    .form-popup {
-      
-            
-            display:none;
-            top:100px; 
-            right:60%;
-            left:40%;
-            width:300px;
-            position:fixed; 
-            z-index: 2000;
-            padding:30px; 
-            -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
-            -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
-            box-shadow:0 0 10px rgba(0,0,0,0.4)
-    }
-    
-    /* Add styles to the form container */
-    .form-container {
-      max-width: 300px;
-      padding: 10px;
-      background-color: white;
-    }
-    
-    /* Full-width input fields */
-    .form-container input[type=text], .form-container input[type=password] {
-      width: 100%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      border: none;
-      background: #f1f1f1;
-    }
-    
-    /* When the inputs get focus, do something */
-    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-      background-color: #ddd;
-      outline: none;
-    }
-    
-    /* Set a style for the submit/login button */
-    .form-container .btn {
-      background-color: #3c93ad;
-      color: white;
-      padding: 16px 20px;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-      margin-bottom:10px;
-      opacity: 0.8;
-    }
-    
-    /* Add a red background color to the cancel button */
-    .form-container .cancel {
-      background-color:#2e748a;
-    }
-    
-    /* Add some hover effects to buttons */
-    .form-container .btn:hover, .open-button:hover {
-      opacity: 1;
-    }
-    
-    
-    </style>
-    <body>
-       
-    <nav class="navbar navbar-custom">
-      <div class="container-fluid">
-        
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          
-          
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                        <h3 Style="color:#0d6161" align="center">Patient Name</h3>
-                        <p><button class="open-button" onclick="openForm()">Change Password</button>
-    
-                        </p>
-                        
+  <nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <!-- No mabile display considered-->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="./receptionist.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!--Data Toggle define the kind of toggling to be included-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Profile<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+                                              <!--Add a path to the reciptionst id from backend based of the reciptionst login-->
+                        <h3 Style="color:#0d6161" align="center">Admin Name</h3>
+                        <h5 Style="color:#0d6161" align="center"Admin ID</h5>
+
           </ul>
-          <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-              <h3>Change Password</h3>
-              <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
-              <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
-          
-              <button type="submit" class="btn">Confirm</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-          </div>
-             
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </li>
+        <li><a href="../Login/loginPage.html">Logout</a></li>
         </ul>
-      </div>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
     </nav>
-    
+
+  
     
     
     
@@ -186,7 +60,7 @@
     
     
 
-    <div style="text-align: center"><img src="./logo2.png" alt="logo" class="logo"></div>
+    <div style="text-align: center"><img src="./logofinal.png" alt="logo" class="logo"></div>
     <div style="text-align: center" class="name">Skedula</div>
     <!--Inital logo and Title Completed-->
 
@@ -209,110 +83,68 @@
     </div>
   </div>
   <div id="demox">
-      <body>
-        <div class="schedulebox"> <!--creating a class called login box-->
-        
-            <h1>Please fill the details</h1>
-            <form action="" method="">
-                <p>Patient ID</p>
-                <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
-                <p>Date</p>
-                <input type="date" id="myDate">
-                <p>Time </p>
-                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                <p>Specialization</p>
-                
-                <select id="dropdown">
-                    <option value="spec1">spec1</option>
-                    <option value="spec2">spec2</option>
-                    <option value="spec3">spec3</option>
-                    <option value="spec4">spec4</option>
-                    <option value="spec5">spec5</option>
-                  </select>
-                  
-                      <p>Doctor</p>
-                         
-                        <select id="dropdown">
-                            <option value="doc1">doc1</option>
-                            <option value="doc2">doc2</option>
-                            <option value="doc3">doc3</option>
-                            <option value="doc4">doc4</option>
-                            <option value="doc5">doc5</option>
-                          </select>
-                 <hr>
-                <button type="submit" class="registerbtn3">Update the changes</button>
-            
-            </form>
-        </div>
-    </body>
-    </html>
-  </div>
-
-  
-    <div id="eemox">
-      <body>
-        <div class="schedulebox"> <!--creating a class called login box-->
-        
-            <h1>Please fill the details</h1>
-            <form action="" method="">
-              <label for="time"><b>Start Time</b></label>
-              <input type="time" placeholder="Enter Time" name="email" id="email" required>
-          
-              <label for="time"><b>End time</b></label>
-              <input type="time" placeholder="Enter Time" name="psw" id="psw" required>
-          
-              <label for="time"><b>Max</b></label>
-              <input type="time" placeholder="Maximum" name="psw-repeat" id="psw-repeat" required>
-              <hr>
+    <body>
+      <div class="schedulebox"> <!--creating a class called login box-->
+      
+          <h1>Please fill the Patient details</h1>
+          <form action="" method="">
+              <p>First Name</p>
+              <input type="text" name="Uname" placeholder="Update the name" maxlength="30">
+              <p>Second Name</p>
+              <input type="text" name="Uname1" placeholder="Update the name"maxlength="30" >
+              <p>Password</p>
+              <input type="text" name="Uname2" placeholder="Update password" maxlength="10" required  >
+              <br/>
               <button type="submit" class="registerbtn3">Update the changes</button>
-            
-            </form>
-        </div>
-    </body>
-    </html>
-  </div>  
+          
+          </form>
+      </div>
+  </body>
+  </html>
+</div>
+
+
+  <div id="eemox">
+    <body>
+      <div class="schedulebox"> <!--creating a class called login box-->
+      
+          <h1>Please fill the Doctor details</h1>
+          <p>First Name</p>
+              <input type="text" name="Uname" placeholder="Update the name" maxlength="30" >
+              <p>Second Name</p>
+              <input type="text" name="Uname1" placeholder="Update the name" maxlength="30" >
+              <p>Password</p>
+              <input type="text" name="Uname2"  placeholder="Update password"  maxlength="10" required>
+              <br/>
+              <button type="submit" class="registerbtn3">Update the changes</button>
+          
+          </form>
+      </div>
+  </body>
+  </html>
+</div>  
+
+<div>
+  <div id="femox">
+    <body>
+      <div class="schedulebox"> <!--creating a class called login box-->
+      
+          <h1>Please fill the Receptionist details</h1>
+          <p>First Name</p>
+              <input type="text" name="Uname" placeholder="Update the name" maxlength="30">
+              <p>Second Name</p>
+              <input type="text" name="Uname1" placeholder="Update the name" maxlength="30">
+              <p>Password</p>
+              <input type="text" name="Uname2" placeholder="Update password" maxlength="10" required>
+              <br/>
+              <button type="submit" class="registerbtn3">Update the changes</button>
+          
+          </form>
+      </div>
+  </body>
+  </html>
   
-  <div>
-    <div id="femox">
-      <body>
-        <div class="schedulebox"> <!--creating a class called login box-->
-        
-            <h1>Please fill the Receptionist details</h1>
-            <form action="" method="">
-                <p>Patient ID</p>
-                <input type="text" name="Uname" placeholder="Enter Patient ID" required  minlength="4" maxlength="4">
-                <p>Date</p>
-                <input type="date" id="myDate">
-                <p>Time </p>
-                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-                <p>Specialization</p>
-                
-                <select id="dropdown">
-                    <option value="spec1">spec1</option>
-                    <option value="spec2">spec2</option>
-                    <option value="spec3">spec3</option>
-                    <option value="spec4">spec4</option>
-                    <option value="spec5">spec5</option>
-                  </select>
-                  
-                      <p>Doctor</p>
-                         
-                        <select id="dropdown">
-                            <option value="doc1">doc1</option>
-                            <option value="doc2">doc2</option>
-                            <option value="doc3">doc3</option>
-                            <option value="doc4">doc4</option>
-                            <option value="doc5">doc5</option>
-                          </select>
-                 
-                <input type="submit" name="Book" value="Update Patient Information">
-            
-            </form>
-        </div>
-    </body>
-    </html>
-    
-  </div>
+</div>
   <script>
   /* When the user clicks on the button, 
   toggle between hiding and showing the dropdown content */
@@ -335,25 +167,23 @@
   }
   
   </script>
-<script>
+ <script>
+   var x = document.getElementById("demox");
+   var y= document.getElementById("eemox");
+   var z = document.getElementById("femox");
   function myFunction1() {
-    var x = document.getElementById("demox");
-    var y = document.getElementById("eemox");
-    var z = document.getElementById("femox");
+  
    
               if (x.style.display === "none" ) {
                 x.style.display = "block";
-                z.style.display = "none";
                 y.style.display = "none";
-                
+                z.style.display = "none"
               } else {
                 x.style.display = "none";
               }
             }
  function myFunction2() {
-  var x = document.getElementById("demox");
-    var y = document.getElementById("eemox");
-    var z = document.getElementById("femox");
+    
     
               if (y.style.display === "none" ) {
                 x.style.display = "none";
@@ -365,9 +195,7 @@
               }
             }
  function myFunction3(){   
-    var z = document.getElementById("femox");
-    var x = document.getElementById("demox");
-    var y = document.getElementById("eemox");
+    
               if (z.style.display === "none" ) {
                 y.style.display = "none";
                 x.style.display = "none";
@@ -383,7 +211,6 @@
   
 
   </script>
-  
   
  
 

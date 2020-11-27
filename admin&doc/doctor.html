@@ -29,9 +29,7 @@
 
 <style>
 
-.active  {
-  background-color: #3c93ad;
-}
+
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
   background-color: rgb(63, 158, 202);
@@ -48,27 +46,7 @@
   margin-right: 20px;
 }
 
-/* The popup form - hidden by default */
-.navbar{
-	font-family: ROBOTO;
-    background-color: #53acca;
-    padding-left: 50px !important;
-   padding-right: 50px ;
-    
-}
-.navbar-brand {
-font-size: 30px;
 
-}
-/* Modify brand and text color */ 
-.navbar-custom .navbar-brand, .navbar-custom .navbar-text,.navbar-nav li a { 
-    color: #010405a4; 
-} 
-.navbar-brand,.navbar-nav {
-	color: rgb(2, 3, 5);
-	font-size:18px ;
-	font-family: "ROBOTO";
-}
 
 .form-popup {
   
@@ -132,40 +110,38 @@ font-size: 30px;
 
 
 </style>
-<body>
-   
-<nav class="navbar navbar-custom">
-  <div class="container-fluid">
-    
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      
-      
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                    <h3 Style="color:#0d6161" align="center">Patient Name</h3>
-                    <p><button class="open-button" onclick="openForm()">Change Password</button>
 
-                    </p>
-                    
-      </ul>
-      <div class="form-popup" id="myForm">
-        <form action="/action_page.php" class="form-container">
-          <h3>Change Password</h3>
-          <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
-          <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
+   
+</head>
+<body>
+  <!-- initialize the navbar -->
+  <div class='design'><!--Class for modifying the nav bar ribbon-->
+  <nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <!-- No mabile display considered-->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="./receptionist.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!--Data Toggle define the kind of toggling to be included-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Profile<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+                                              <!--Add a path to the reciptionst id from backend based of the reciptionst login-->
+                        <h3 Style="color:#0d6161" align="center">Doctor Name</h3>
+                        <h5 Style="color:#0d6161" align="center">Doctor ID</h5>
+
+          </ul>
+        </li>
+        <li><a href="../Login/loginPage.html">Logout</a></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+    </nav>
       
-          <button type="submit" class="btn">Confirm</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-        </form>
-      </div>
-         
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
 
 
 

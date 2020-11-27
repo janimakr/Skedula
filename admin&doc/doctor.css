@@ -1,137 +1,126 @@
 .logo{
-    width: 125px;
+  width: 125px;
 }
 .name{
-    font-size:30px;
-    color:#53acca;
-    ;
-    font-weight: bold;
+  font-size:30px;
+  color:#53acca;
+  ;
+  font-weight: bold;
 }
-ul.nav a:hover {
-    color: #53acca;
+ul.nav a:hover{
+background-color:  #3a506b;
+color:white;
+
 }
 .navbar{
-	font-family: ROBOTO;
-	background-color:#53acca;
+background-color:#1c2541;
+
+}
+.navbar-custom .navbar-nav>.open>a {
+background-color: #3a506b;
 }
 .navbar-brand,.navbar-nav li a{
-	color: aliceblue;
-	font-size:18px ;
-	font-family: "ROBOTO";
+color:#d4d1d1;
+font-size:18px ;
+font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-brand:hover{
+color:white;
 }
 .VLine {
-    border-left: 6px solid #033f30;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 90px;
-  }
-  
-
-  /* Add padding to containers */
-  .container {
-    padding: 16px;
-  }
-  
-  /* Full-width input fields */
-  input[type=text], input[type=passwor] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Overwrite default styles of hr */
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-  }
-  
-  /* Set a style for the submit/register button */
-  .registerbtn3 {
-    background-color: #4074d4;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    float: left;
-  }
-  
-  .registerbtn3:hover {
-    opacity:1;
-  }
-  .registerbtn2 {
-    background-color: #4074d4;
-    color: white;
-    padding: 5px 30px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    opacity: 0.9;
-   
-    
-
-  }
-  .registerbtn1{
-    background-color: #4074d4;
-    color: white;
-    margin: 8px 0; 
-    padding: 5px 30px;
-    border: none;
-    cursor: pointer; 
-    opacity: 0.9;
-  }
-  /* Add a blue text color to links */
-  a {
-    color: dodgerblue;
-  }
-  
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signin {
-    background-color: #f1f1f1;
-    text-align: center;
-  }
-  .navbar-toggle { 
-    border-color: white; 
-    background-image: url(
-           
-  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  } 
-  /*Adding a image from th above link with given coordinates and color*/
-   /* The popup form - hidden by default */
-   .navbar{
-    font-family: ROBOTO;
-    background-color: #53acca;
-    padding-left: 10px !important;
-   padding-right: 10px ;
-    
+  border-left: 6px solid #033f30;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 90px;
 }
-.navbar-brand {
-font-size: 30px;
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=passwor] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn3 {
+  background-color: #1c2541;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  float: left;
+}
+
+.registerbtn3:hover {
+  opacity:1;
+}
+.registerbtn2 {
+  background-color: #1c2541;
+  color: white;
+  padding: 5px 30px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+ 
+  
 
 }
-/* Modify brand and text color */ 
-.navbar-custom .navbar-brand, .navbar-custom .navbar-text,.navbar-nav li a { 
-    color: #010405a4; 
+.registerbtn1{
+  background-color: #1c2541;
+  color: white;
+  margin: 8px 0; 
+  padding: 5px 30px;
+  border: none;
+  cursor: pointer; 
+  opacity: 0.9;
+}
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+.navbar-toggle { 
+  border-color: white; 
+  background-image: url(
+         
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 } 
-.navbar-brand,.navbar-nav {
-    color: rgb(2, 3, 5);
-    font-size:18px ;
-    font-family: "ROBOTO";
-}
+/*Adding a image from th above link with given coordinates and color*/
+ /* The popup form - hidden by default */
+ 
 /*for the text box to come after clicking update*/
 #demox {
 
-  display:none;
-  
-  }
+display:none;
+
+}

@@ -1,4 +1,4 @@
-INSERT INTO Admin (AID,pwd,fName,sName) VALUES('A001','abcdefg78','Ragavendra','Bhattacharya');
+INSERT INTO Admin (AID,pwd,fName,sName) VALUES('A001','abcdefg78','Ragavendra','Goswami');
 INSERT INTO Admin (AID,pwd,fName,sName) VALUES('A002','cryptobit','Bhindu','Panikar');
 INSERT INTO Admin (AID,pwd,fName) VALUES('A003','disledger','Suresh');
 

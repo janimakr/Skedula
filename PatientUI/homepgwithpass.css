@@ -69,6 +69,7 @@ html,body
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #4962ab;
 }
 
 .site_footer ul{
@@ -91,7 +92,7 @@ html,body
 }
 
 #BName{
-    color: #29abe2;
+    color: #002147;
 }
 .container{
     font-family: ROBOTO
@@ -107,6 +108,7 @@ h2{
     
 #about{
     font-family: ROBOTO
+
     }
     
 p{
@@ -114,25 +116,25 @@ p{
     }
 #meet{
 	font-size: 40px;
-	color:#2b9af4;
+	color: #002147;
 	padding-top: 70px;
 	text-align: center;
 }
 
 #hons{
 	font-size: 40px;
-	color:#2b9af4;
+	color: #002147;
 	padding-top: 35px;
 	text-align: center;
 }
 
 hr{
-  	  border: 1px solid #002147;
+  	  border: 1px solid #4962ab;
 }
 
 #about{
 	font-size: 40px;
-	color:#2b9af4;
+	color: #002147;
     padding-left: 15px;
 	padding-top:25px 
 }
@@ -172,12 +174,12 @@ text-align: justify;
   .social P{
 	  padding-top: 10px;
 	  text-align: center;
-	  color: #1BBA93;
+	  color: #002147;
 	  font-size: 17px
   }
   #spec{
   	text-align: center;
-	  color: #42d1f5;
+	  color: #4962ab;
 	  font-size: 16px;
   	  padding:0;
   	  line-height: 9px;
@@ -185,7 +187,7 @@ text-align: justify;
   }
 
   .social img{
-  	border: 7px solid #1BBA93
+  	border: 7px solid #4962ab;
   }
 
 .navbar-toggle { 
@@ -202,7 +204,7 @@ text-align: justify;
 {
 	padding-left: 9%;
 	padding-top: 10%;
-	color: white
+	color: #4962ab;
 }
 
 .discol {
@@ -215,14 +217,14 @@ text-align: justify;
 .discol p{
 	padding-top: 10px;
 	  text-align: center;
-	  color: #1BBA93;
+	  color: #002147;
 	  font-size: 19px;
 	  padding-bottom: 30px;
 }
 
 .discol img{
 	border-radius: 50%;
-	border: 7px solid #1BBA93
+	border: 7px solid #4962ab;
 }
 
 .disrow::after {
