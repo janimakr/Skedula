@@ -1,14 +1,17 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-    <title>Reschedule</title>
-    <link rel="stylesheet" type="text/css" href="./Patientrsch.css">
-    <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<head>
+<title>Reschedule</title>
+<link rel="stylesheet" type="text/css" href="./Patientrsch.css"><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">    
     </head>
     
     <body>
@@ -16,24 +19,25 @@
         <div class="container-fluid">
           
           <ul class="nav navbar-nav">
-            <li><a href="./homepgwithpass.html">Home</a></li>
+            <li><a href="./homepgwithpass.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
+            </li>
             <li ><a href="./patientappmtwithpass.html">New Appointment</a></li>
             <li class="active"><a href="#">Reschedule</a></li>
             <li><a href="./patientrptswithpass.html">Reports</a></li>
             
           </ul>
           <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile<span class="caret"></span></a>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" >Profile<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                           <h3 Style="color:#0d6161" align="center">Patient Name</h3>
-                          <p><button class="open-button" onclick="openForm()">Change Password</button>
+                          <p><button class="open-button"  onclick="openForm()">Change Password</button>
       
                           </p>
                           
             </ul>
             <div class="form-popup" id="myForm">
-              <form action="/action_page.php" class="form-container">
-                <h3>Change Password</h3>
+              <form action="" class="form-container">
+                <h3 Style="color:#0d6161">Change Password</h3>
                 <input type="password" name="Newpass" type="password" placeholder="New Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
                 <input type="password" name="confirmpass" type="password" placeholder="Confirm Password" pattern="[a-zA-Z0-9]+" maxlength="10" required>
             
@@ -42,178 +46,86 @@
               </form>
             </div>
                
-            <li><a href="../Login/loginPage.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="../Login/loginPage.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
           </ul>
         </div>
       </nav>
-      
-      
-      
+         
     
       
 <div class="bodybody">   
 <div class="logo"> <!--creating a class called login box-->
-  <img class="center" src="./Logo.png" alt="Logo">
+  <img class="center" src="./logofinal1.png" alt="Logo">
 </div>
+<hr>
 <h1 id="title" align="center" style="font-family: ROBOTO;"> Currently booked schedules   </h1>
-<div schedule>
-  <div class="container-fluid no-gutter">
-    <div class="row row-centered no-gutter">
-        <div class="dashboard-panel">
-            
-                <div class="panel panel-default shadowHover">
-                        <div class="hubPanel panel-body">
-                                 <div class="panelTitleBar">
-                                <div class="panelTitle">
-                                    Appointment 1 (Schedule ID)
-                                </div>
-                            </div>
-                            <div class="panelContent">
-                              <p>Time </p>
-                              <p>Specification</p>
-                                <p>Doctor </p>
-                            </div>
-                            <p  style='color:#061f1f;font-size: 15px;' align="center">
-                              Edit Time    <input type="time" style="margin-left: 15px;" id="appt" name="appt" min="09:00" max="18:00" required>
-                              <input type="button" value="Edit" style="margin-right: 200px;"/>
-                              Delete this Schedule    <input type="button" style="margin-left: 15px;" value="Delete" /></p>
-                      </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            
-        </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3><img src="./calendar-clock-schedule-appointment-important-date-concept-flat-cartoon-design-vector-illustration-calendar-clock-114007588.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">Schedule ID</h3>
+      <hr style="background-color: #1c2541;">
+      <p>Time </p>
+      <p>Specification</p>
+        <p>Doctor </p>
+      <p>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required ></p>
+        <button class="btnsuccess" style="margin-bottom: 10px;">Edit time</button> 
+        <button class="w3-button w3-block w3-white" style="background-color:#1c2541 !important;  color:#d4d1d1 !important;" >Delete Appointment</button>
+
     </div>
-  </div>   
-        
-          <div class="container-fluid no-gutter">
-            <div class="row row-centered no-gutter">
-                <div class="dashboard-panel">
-                    
-                        <div class="panel panel-default shadowHover">
-                                <div class="hubPanel panel-body">
-                                         <div class="panelTitleBar">
-                                        <div class="panelTitle">
-                                            Appointment 2 (Schedule ID)
-                                        </div>
-                                    </div>
-                                    <div class="panelContent">
-                                      <p>Time </p>
-                                      <p>Specification</p>
-                                        <p>Doctor </p>
-                                    </div>
-                                    <p  style='color:#061f1f;font-size: 15px;' align="center">
-                                      Edit Time    <input type="time" style="margin-left: 15px;" id="appt" name="appt" min="09:00" max="18:00" required>
-                                      <input type="button" value="Edit" style="margin-right: 200px;"/>
-                                      Delete this Schedule    <input type="button" style="margin-left: 15px;" value="Delete" /></p>
-                              </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-          
-                
-          <div class="container-fluid no-gutter">
-            <div class="row row-centered no-gutter">
-                <div class="dashboard-panel">
-                    
-                        <div class="panel panel-default shadowHover">
-                                <div class="hubPanel panel-body">
-                                         <div class="panelTitleBar">
-                                        <div class="panelTitle">
-                                            Appointment 3 (Schedule ID)
-                                        </div>
-                                    </div>
-                                    <div class="panelContent">
-                                      <p>Time </p>
-                                      <p>Specification</p>
-                                        <p>Doctor </p>
-                                    </div>
-                                    <p  style='color:#061f1f;font-size: 15px;' align="center">
-                                      Edit Time    <input type="time" style="margin-left: 15px;" id="appt" name="appt" min="09:00" max="18:00" required>
-                                      <input type="button" value="Edit" style="margin-right: 200px;"/>
-                                      Delete this Schedule    <input type="button" style="margin-left: 15px;" value="Delete" /></p>
-                              </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        
-               
-          <div class="container-fluid no-gutter">
-            <div class="row row-centered no-gutter">
-                <div class="dashboard-panel">
-                    
-                        <div class="panel panel-default shadowHover">
-                                <div class="hubPanel panel-body">
-                                         <div class="panelTitleBar">
-                                        <div class="panelTitle">
-                                            Appointment 4 (Schedule ID)
-                                        </div>
-                                    </div>
-                                    <div class="panelContent">
-                                      <p>Time </p>
-                                      <p>Specification</p>
-                                        <p>Doctor </p>
-                                    </div>
-                                    <p  style='color:#061f1f;font-size: 15px;' align="center">
-                                      Edit Time    <input type="time" style="margin-left: 15px;" id="appt" name="appt" min="09:00" max="18:00" required>
-                                      <input type="button" value="Edit" style="margin-right: 200px;"/>
-                                      Delete this Schedule    <input type="button" style="margin-left: 15px;" value="Delete" /></p>
-                              </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-           
-                                                        
-<div class="container-fluid no-gutter">
-  <div class="row row-centered no-gutter">
-      <div class="dashboard-panel">
-          
-              <div class="panel panel-default shadowHover">
-                      <div class="hubPanel panel-body">
-                               <div class="panelTitleBar">
-                              <div class="panelTitle">
-                                  Appointment 5 (Schedule ID)
-                              </div>
-                          </div>
-                          <div class="panelContent">
-                            <p>Time </p>
-                            <p>Specification</p>
-                              <p>Doctor </p>
-                          </div>
-                          <p  style='color:#061f1f;font-size: 15px;' align="center">
-                            Edit Time    <input type="time" style="margin-left: 15px;" id="appt" name="appt" min="09:00" max="18:00" required>
-                            <input type="button" value="Edit" style="margin-right: 200px;"/>
-                            Delete this Schedule    <input type="button" style="margin-left: 15px;" value="Delete" /></p>
-                    </p>
-                      </div>
-                  </a>
-              </div>
-          </div>
-          
-      </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3><img src="./calendar-clock-schedule-appointment-important-date-concept-flat-cartoon-design-vector-illustration-calendar-clock-114007588.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">Schedule ID</h3>
+      <hr>
+      <p>Time </p>
+      <p>Specification</p>
+        <p>Doctor </p>
+      <p>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required ></p>
+        <button class="btnsuccess" style="margin-bottom: 10px;">Edit time</button> 
+        <button class="w3-button w3-block w3-white" style="background-color:#1c2541 !important;  color:#d4d1d1 !important;" >Delete Appointment</button>
+
+    </div>
   </div>
   
-    
+  <div class="column">
+    <div class="card">
+      <h3><img src="./calendar-clock-schedule-appointment-important-date-concept-flat-cartoon-design-vector-illustration-calendar-clock-114007588.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">Schedule ID</h3>
+      <hr>
+      <p>Time </p>
+      <p>Specification</p>
+        <p>Doctor </p>
+      <p>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required ></p>
+        <button class="btnsuccess" style="margin-bottom: 10px;">Edit time</button> 
+        <button class="w3-button w3-block w3-white" style="background-color:#1c2541 !important;  color:#d4d1d1 !important;" >Delete Appointment</button>
 
-    <div class="row">
-        <div class="col-sm-12">
-          <p align="right" style="font-family: ROBOTO; margin-right: 20px;">COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED </p>
-        </div>
-      </div>
     </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3><img src="./calendar-clock-schedule-appointment-important-date-concept-flat-cartoon-design-vector-illustration-calendar-clock-114007588.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">Schedule ID</h3>
+      <hr>
+      <p>Time </p>
+      <p>Specification</p>
+        <p>Doctor </p>
+      <p>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required ></p>
+        <button class="btnsuccess" style="margin-bottom: 10px;">Edit time</button> 
+        <button class="w3-button w3-block w3-white" style="background-color:#1c2541 !important;  color:#d4d1d1 !important;" >Delete Appointment</button>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+            <p style="padding-left: 72%;" style="padding-top: 20px;" style="font-family: ROBOTO;">COPYRIGHT SKEDULA &reg; 2020. ALL RIGHTS RESERVED</p>
+    </div>
+  </div>
+
       <script>
         
 

@@ -1,35 +1,35 @@
 /*modifying the background details*/
 body{
     
-    padding: 0; 
-    background: url("./schedulebg.png");
-    background-size:cover;
-    background-position: center;
-    font-family: Helvetica;
-    
+  padding: 0; 
+  background: url("./schedulebg.png");
+  background-size:cover;
+  background-position: center;
+  font-family: Helvetica;
+  
 }
 
 /*defining the features of logo*/
 
 .logo{
-  width: 220px;
+width: 220px;
 }
 
 
 h1{
-    padding-bottom: 3%;
-    text-align: center;
-    font-size: 22px;
+  padding-bottom: 3%;
+  text-align: center;
+  font-size: 22px;
 }
 
 .appform{
-  display:block;
-  text-align:left;
-  display:inline-block;
-  width:700px;
-  margin-left: 30%;
-   margin-right: 50%;
-   
+display:block;
+text-align:left;
+display:inline-block;
+width:700px;
+margin-left: 30%;
+ margin-right: 50%;
+ 
 }
 .title{
 color:#033f30;
@@ -39,32 +39,32 @@ margin-bottom: 2px;
 display: block;
 }
 .active  {
-  background-color:  #3a506b; }
+background-color:  #3a506b; }
 
 #Dropdownform{
-    align-content: center;
-    width:70%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  };
+  align-content: center;
+  width:70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+};
 
 
 #drop{
-    padding-bottom: 100px;
-    width: 200px
+  padding-bottom: 100px;
+  width: 200px
 }
 
 
 html,body
 {   
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 }
 
 
@@ -75,84 +75,82 @@ html,body
 
 /* Full-width input fields */
 input[type=text], input[type=time] {
-    width:70%;
-    color:#3a506b;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
+  width:70%;
+  color:#3a506b;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
 
 input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-  color:#3a506b;
+background-color: #ddd;
+outline: none;
+color:#3a506b;
 }
 
 /* Overwrite default styles of hr */
 hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-  margin-left: 200px;
-  margin-right: 200px;
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+margin-left: 200px;
+margin-right: 200px;
 }
 
 /* Add padding to containers */
 /* Set a style for the submit/register button */
 .registerbtn {
-  background: #222c4d;
+background: #222c4d;
 
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 70%;
-  opacity: 1;
-  margin-left: 15%;
-  margin-right: 30%;
-  margin-top: 50px;
+color: white;
+padding: 16px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 70%;
+opacity: 1;
+margin-left: 15%;
+margin-right: 30%;
+margin-top: 50px;
 }
 
 .registerbtn:hover {
-  background: #4962ab;}
+background: #4962ab;}
 
 /* Add a blue text color to links */
 a {
-  color: dodgerblue;
+color: dodgerblue;
 }
 
-ul.nav a:hover { color: #3a506b !important; }
+ul.nav a:hover { color: #ffffff; background-color: #1c2541 !important; }
 
 .navbar-brand,.navbar-nav li a{
-  color:#d4d1d1;
+color:#d4d1d1;
 font-size:18px ;
 font-family: Arial, Helvetica, sans-serif;
 }
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
-  background: #222c4d;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
- 
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+background: #222c4d;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+
+bottom: 23px;
+right: 28px;
+width: 280px;
+margin-left: 20px;
+margin-right: 20px;
 }
-.open-button:hover {
-  background-color: #3a506b;
-}
+
 /* The popup form - hidden by default */
 .navbar{
-    font-family: ROBOTO;
-    background-color:#1c2541;
+  font-family: ROBOTO;
+  background-color:#1c2541;
+
   
-    
 }
 .navbar-brand {
 font-size: 30px;
@@ -160,90 +158,90 @@ font-size: 30px;
 }
 /* Modify brand and text color */ 
 .navbar-brand,.navbar-nav>.open>a {
-  background-color: #3a506b;
+background-color: #3a506b;
 }
 .navbar-brand,.navbar-nav {
-  color:#d4d1d1;
-	font-size:18px ;
-	font-family: Arial, Helvetica, sans-serif;
+
+font-size:18px ;
+font-family: Arial, Helvetica, sans-serif;
 }
-.navbar-brand:hover{
-  background-color: #3a506b;
-}
+
 .form-popup {
-  
-        
-        display:none;
-        top:100px; 
-        right:60%;
-        left:39%;
-        width:300px;
-        position:fixed; 
-        z-index: 2000;
-        padding:30px; 
-        -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
-        -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
-        box-shadow:0 0 10px rgba(0,0,0,0.4)
+
+      
+      display:none;
+      top:100px; 
+      right:60%;
+      left:39%;
+      width:300px;
+      position:fixed; 
+      z-index: 2000;
+      padding:30px; 
+      -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+      -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+      box-shadow:0 0 10px rgba(0,0,0,0.4)
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
+max-width: 300px;
+padding: 10px;
+background-color: white;
 }
 
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
 }
 
-/* When the inputs get focus, do something */
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+background-color: #ddd;
+outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background: #222c4d;
+background: #222c4d;
 
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background: #1c2541;
+background: #1c2541;
 }
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
-  background: #4962ab;
+background: #4962ab;
 }
+.active  {
+background-color:  #3a506b; }
+
 /*css for the hidden doctors*/
 
 #doc1 {
-    display: none;
+  display: none;
 }
 #doc2 {
-    display: none;
+  display: none;
 }
 #doc3 {
-    display: none;
+  display: none;
 }
 #doc4 {
-    display: none;
+  display: none;
 }
 #doc5 {
-    display: none;
+  display: none;
 }
