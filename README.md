@@ -2,7 +2,7 @@
 Skedula is an Electron based desktop application for scheduling appointment in a Hospital. The database used is  MySQL database running on the Apache web sever. 
 ## Database Design:
 ## ER DIAGRAM:
-![ER Diagram](Images/ER DIAGRAM.JPG)
+![](Skedula/Images/ER DIAGRAM.jpg)
 #### The Relational database model has the following tables:
 Doctor (DocID, pwd, f_name, s_name, Specialization, start time, end time, max today)   
 Receptionist (RID, pwd, f_name, s_name)  
