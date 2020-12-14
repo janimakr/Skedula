@@ -25,7 +25,7 @@ The database used is  MySQL running on the Apache web sever.
 M_ID values are DocID or PatID or RID
 ## Pre-requisites:
 1. Node
-2. Xaamp with the required database( table / trigger creation and insertion commands available in the ".src/Database" folder and also database available as a hmsdb.sql file) 
+2. Xaamp with the required database( table / trigger creation and insertion commands available in the ".src/Database" folder and database is available as a hmsdb.sql file in the same folder) 
 ## Setting up the environment and opening the desktop app
 ### Step 1:
 Navigate to the Applictaion folder in the IDE terminal/ command prompt and type "npm install" to install all the dependecy files and node modules required for the appliacation as mentioned in the .JSON file.
