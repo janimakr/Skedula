@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- initializing width for devices -->
+  <!-- This gives the browser instructions on how to control the page's dimensions and scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">   <!--Initial zoom level specified by initial scale=1--> 
+  <title>Skedula</title>
+  <!-- Bringing in the Bootrstap CDN -->
+   <!-- Bringing in the Bootrstap CDN-Content Delivery Network; Basiacally adding Bootstrap Cdn to get the basic str instead of downloading and hosting bootstrap on the device -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+  <!-- linking the CSS -->
+  <link rel="stylesheet" type="text/css" href="./admin.css">
+</head>
+<body>
+  <!-- initialize the navbar -->
+  <div class='design'><!--Class for modifying the nav bar ribbon-->
+  <nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <!-- No mabile display considered-->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="./receptionist.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!--Data Toggle define the kind of toggling to be included-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Profile<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+                                              <!--Add a path to the reciptionst id from backend based of the reciptionst login-->
+                        <h3 Style="color:#0d6161" align="center">Admin Name</h3>
+                        <h5 Style="color:#0d6161" align="center"Admin ID</h5>
+
+          </ul>
+        </li>
+        <li><a href="../Login/loginPage.html">Logout</a></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+    </nav>
+
+  
+    
+    
+    
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+    
+    
+
+    <div style="text-align: center"><img src="./logofinal.png" alt="logo" class="logo"></div>
+    <div style="text-align: center" class="name">Skedula</div>
+    <!--Inital logo and Title Completed-->
+
+    <div class="btn-group" style ="float:centre;">
+ <nobr style="align:center">    <button class="dbbutton" type= "button"id="action-btn2">Update</button>
+  <button class="dbbutton" type= "button"id="action-btn3">Deletion</button>
+  <button  class="dbbutton1" type= "button"id="action-btn4">Insert</button>
+
+         <button  class="dbbutton" type="button"id="action-btn1" >View</button><br>
+        </nobr>
+            <table class='table' id="table" border="100">
+              <tbody>
+                  
+              </tbody>
+          </table>
+            <script>
+              var mysql = require('mysql');
+      
+              function el(selector) {
+                  return document.getElementById(selector);
+              }
+              function ul(selector){
+                return document.getElementById(selector);
+              }
+       function dl(selector){
+          return document.getElementById(selector);
+       }
+       function sl(selector){
+         return document.getElementById(selector);
+       }
+              el('action-btn1').addEventListener('click', function(){
+                  // Get the mysql service
+                  getFirstTenRows(function(rows){
+                      var html = '';
+      
+                      rows.forEach(function(row){
+                          html += '<tr>';
+                          html += '<td>';
+                          html += row.DocID;
+                          html += '</td>';
+                          html += '<td>';
+                          html += row.fName;
+                          html += '</td>';
+                          html += '</tr>';
+                         
+                          
+
+                      });
+      
+                      document.querySelector('#table > tbody').innerHTML = html;
+                  });
+              },false);
+//for update
+              ul('action-btn2').addEventListener('click', function(){
+                  // Get the mysql service
+                  getUpdate(function(rows){
+                      var html = '';
+      
+                      
+      
+                      document.querySelector('#table > tbody').innerHTML = html;
+                  });
+              },false);
+//function delete
+              dl('action-btn3').addEventListener('click', function(){
+                  // Get the mysql service
+                  getDeleted(function(rows){
+                      var html = '';
+      
+                      
+      
+                      document.querySelector('#table > tbody').innerHTML = html;
+                  });
+              },false);
+//function to Insert
+            sl('action-btn4').addEventListener('click', function(){
+                  // Get the mysql service
+                  getInserted(function(rows){
+                      var html = '';
+      
+                      
+      
+                      document.querySelector('#table > tbody').innerHTML = html;
+                  });
+              },false);
+
+              //to View the table 
+       function getFirstTenRows(callback){
+        var mysql = require('mysql');
+      
+      // Add the credentials to access your database
+      var connection = mysql.createConnection({
+          host     : 'localhost',
+          user     : 'root',
+          password : null,
+          database : 'hmsdb'
+      });
+
+      // connect to mysql
+      connection.connect(function(err) {
+          // in case of error
+          if(err){
+              console.log(err.code);
+              console.log(err.fatal);
+          }
+      });
+
+      // Perform a query
+      $query = ' Select * from `doctor`;'
+
+      connection.query($query, function(err, rows, fields) {
+          if(err){
+              console.log("An error ocurred performing the query.");
+              console.log(err);
+              return;
+          }
+
+          callback(rows);
+
+          console.log("Query succesfully executed");
+      });
+
+      // Close the connection
+      connection.end(function(){
+          // The connection has been closed
+      });
+  }
+
+       //TO Update the table
+              function getUpdate(callback){
+                  var mysql = require('mysql');
+      
+                  // Add the credentials to access your database
+                  var connection = mysql.createConnection({
+                      host     : 'localhost',
+                      user     : 'root',
+                      password : null,
+                      database : 'hmsdb'
+                  });
+      
+                  // connect to mysql
+                  connection.connect(function(err) {
+                      // in case of error
+                      if(err){
+                          console.log(err.code);
+                          console.log(err.fatal);
+                      }
+                  });
+      
+                  // Perform a query
+                  $query = 'Update `doctor` SET fName="Update" where `DocID`="D006" ';
+      
+                  connection.query($query, function(err, rows, fields) {
+                      if(err){
+                          console.log("An error ocurred performing the query.");
+                          console.log(err);
+                          return;
+                      }
+      
+                      callback(rows);
+      
+                      console.log("Query succesfully executed");
+                  });
+                }
+      // to delete
+      function getDeleted(callback){
+                  var mysql = require('mysql');
+      
+                  // Add the credentials to access your database
+                  var connection = mysql.createConnection({
+                      host     : 'localhost',
+                      user     : 'root',
+                      password : null,
+                      database : 'hmsdb'
+                  });
+      
+                  // connect to mysql
+                  connection.connect(function(err) {
+                      // in case of error
+                      if(err){
+                          console.log(err.code);
+                          console.log(err.fatal);
+                      }
+                  });
+      
+                  // Perform a query
+                  $query = 'DELETE FROM `doctor`where `DocID`="D001" ';
+      
+                  connection.query($query, function(err, rows, fields) {
+                      if(err){
+                          console.log("An error ocurred performing the query.");
+                          console.log(err);
+                          return;
+                      }
+      
+                      callback(rows);
+      
+                      console.log("Query succesfully executed");
+                  });
+                  // Close the connection
+                  connection.end(function(){
+                      // The connection has been closed
+                  });
+
+                }
+                 //TO Insert into the table
+              function getInserted(callback){
+                  var mysql = require('mysql');
+      
+                  // Add the credentials to access your database
+                  var connection = mysql.createConnection({
+                      host     : 'localhost',
+                      user     : 'root',
+                      password : null,
+                      database : 'hmsdb'
+                  });
+      
+                  // connect to mysql
+                  connection.connect(function(err) {
+                      // in case of error
+                      if(err){
+                          console.log(err.code);
+                          console.log(err.fatal);
+                      }
+                  });
+                
+                  // Perform a query
+                  $query = 'INSERT INTO `doctor`(`DocID`,`pwd`,`fName`,`sName`,`Spec`) VALUES ("D008","digialph","Raj","Kapoor","ORT") ';
+      
+                  connection.query($query, function(err, rows, fields) {
+                      if(err){
+                          console.log("An error ocurred performing the query.");
+                          console.log(err);
+                          return;
+                      }
+      
+                      callback(rows);
+      
+                      console.log("Query succesfully executed");
+                  });
+                }
+              
+          </script> 
+         
+
+ 
+<!-- 
+  
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Edit
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+      <a id="demo" href="#patient" onclick="myFunction1()">Patient</a>
+      <a href="#doctor"onclick="myFunction2()">Doctor</a>
+      <a href="#recep"onclick="myFunction3()">Receptionist</a>
+    </div>
+  </div>
+  <div id="demox">
+    <body>
+      <div class="schedulebox"> <!--creating a class called login box
+      
+          <!-- <h1>Please fill the Patient details</h1>
+          <form action="" method="">
+            <p>User ID</p>
+              <input type="text" name="PatID" placeholder="Enter the Patient ID" maxlength="4">  
+            <p>First Name</p>
+              <input type="text" name="fnameP" placeholder="Update the name" maxlength="15">
+              <p>Second Name</p>
+              <input type="text" name="snameP" placeholder="Update the name"maxlength="10" >
+              <p>Password</p>
+              <input type="text" name="pwdP" placeholder="Update password" maxlength="10" required  >
+              <br/>
+              <button type="submit" class="registerbtn3">Update the changes</button>
+          
+          </form>
+      </div>
+  </body>
+  </html>
+</div>
+
+
+  <div id="eemox">
+    <body>
+      <div class="schedulebox"> creating a class called login box 
+      
+          <h1>Please fill the Doctor details</h1>
+          <p>User ID</p>
+              <input type="text" name="DID" placeholder="Enter the Doctor ID" maxlength="4">  
+          <p>First Name</p>
+              <input type="text" name="fnameD" placeholder="Update the name" maxlength="15" >
+              <p>Second Name</p>
+              <input type="text" name="snameD" placeholder="Update the name" maxlength="10" >
+              <p>Password</p>
+              <input type="text" name="pwdD"  placeholder="Update password"  maxlength="10" required>
+              <br/>
+              <button type="submit" class="registerbtn3">Update the changes</button>
+          
+          </form>
+      </div>
+  </body>
+  </html>
+</div>  
+
+<div>
+  <div id="femox">
+    <body>
+      <div class="schedulebox"> <!--creating a class called login box-
+      
+          /*<h1>Please fill the Receptionist details</h1>
+          <p>User ID</p>
+              <input type="text" name="RID" id="RID" placeholder="Enter the Receptionist ID" maxlength="4">  
+          <p>First Name</p>
+              <input type="text" name="fnameR" id="fnameR" placeholder="Update the name" maxlength="30">
+              <p>Second Name</p>
+              <input type="text" name="snameR" id="snameR" placeholder="Update the name" maxlength="30">
+              <p>Password</p>
+              <input type="text" name="pwdR" id="pwdR" placeholder="Update password" maxlength="10" required>
+              <br/>
+              <button type="submit" onlclick="updateFunctionR()"class="registerbtn3">Update the changes</button>
+          
+          </form>
+      </div>
+  </body>
+  </html> 
+  
+</div>
+  <script> */
+    
+  function updateFunctionR(){
+    var formData=getdata();
+    var sql=require('mysql')
+    var con=sql.createConnection({
+      host     : 'localhost',
+      user     : 'root',
+      password : null,
+      database : 'hmsdb'
+    })
+
+    con.connect(function(err){
+      if(err) throw err;
+      var sl="UPDATE `receptionist` SET fName='"+formData["fnameR"]+"',sNameR='"+formData["snameR"]+"',pwd='"+formData["pwdR"]+"WHERE RID='"+formData["RID"]+"'";
+      con.query(sl,function(err,result)
+      {
+        if(err) throw err;
+        console.log("Record updated");
+      })    })
+  }
+  function getdata(){
+      var formData={};
+      formData["RID"]=document.getElementsByID("RID").value;
+      formData["fnameR"]=document.getElementsByID("fnameR").value;
+      formData["snameR"]=document.getElementsByID("snameR").value;
+      formData["pwdR"]=document.getElementsByID("pwdR").value;
+      }
+
+  function edittable(data){
+
+  }
+/* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  
+  </script>
+ <script>
+   var x = document.getElementById("demox");
+   var y= document.getElementById("eemox");
+   var z = document.getElementById("femox");
+  function myFunction1() {
+  
+   
+              if (x.style.display === "none" ) {
+                x.style.display = "block";
+                y.style.display = "none";
+                z.style.display = "none"
+              } else {
+                x.style.display = "none";
+              }
+            }
+ function myFunction2() {
+    
+    
+              if (y.style.display === "none" ) {
+                x.style.display = "none";
+                y.style.display = "block";
+                z.style.display = "none";
+                
+              } else {
+                y.style.display = "none";
+              }
+            }
+ function myFunction3(){   
+    
+              if (z.style.display === "none" ) {
+                y.style.display = "none";
+                x.style.display = "none";
+                z.style.display = "block";
+                
+                
+              }
+               else {
+                z.style.display = "none";
+              }
+            }
+  
+  
+
+  </script>
+  
+ 
+
+    
+
+<!-- bringing in the scripts like jquery in, for getting the moving parts like dropdowns and collapsing the navbar for mobile devices,Supports Bootstrap frontend framework-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>

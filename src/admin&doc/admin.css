@@ -1,0 +1,252 @@
+display-flex, .FormContainers, .form-group,.GroupLeft,.GroupRight{
+  display: flex;
+  
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: url(./download.jfif);
+  background-size:cover;
+  background-position: center;
+  
+}
+.dbbutton1{
+  padding-left:5%
+
+
+}
+
+.logo{
+  width: 160px;
+}
+.pic{
+  width: 100px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+}
+.name{
+  font-size: 40px;
+  color:#1c2541;
+  ;
+  font-weight: bold;
+}
+ul.nav a:hover{
+  background-color:  #3a506b;
+  color:white;
+
+}
+.navbar{
+  background-color:#1c2541;
+
+}
+.navbar-custom .navbar-nav>.open>a {
+  background-color: #3a506b;
+}
+.navbar-brand,.navbar-nav li a{
+  color:#d4d1d1;
+font-size:18px ;
+font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-brand:hover{
+  color:white;
+}
+.VLine {
+  border-left: 6px solid #033f30;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 90px;
+}
+form{
+  margin: 20px;
+}
+
+#dropdown{
+  margin: 15px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+}
+
+.btn-group button {
+background-color: rgb(2, 39, 70);; /* Green background */
+border: 1px solid rgb(2, 39, 70); /* Green border */
+color: white; /* White text */
+padding: 15px 42px; /* Some padding */
+cursor: pointer; /* Pointer/hand icon */
+float: left; 
+
+position:relative;
+
+/* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+background-color: rgb(4, 37, 65);
+}
+.dropbtn {
+background-color:  #4074d4;
+color: white;
+padding: 5px 30px;
+margin: 8px 0; 
+font-size: 16px;
+border: none;
+cursor: pointer;
+position:absolute;
+left:900px;
+cursor: pointer; 
+
+
+}
+.btn-group  {
+display:inline-block;
+padding-block-end: 60px;
+left: 100px;
+
+
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+
+display: none;
+position: absolute;
+background-color: #0f97f1;
+min-width: 8px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+left: 900px;
+top: 55px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color:rgb(14, 43, 66);}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  position:absolute;
+left:900px;
+  
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+ /* css for patient*/
+#demox {
+
+  display:none;
+  
+  
+  }
+ #eemox {
+
+  display:none;
+   
+    
+    }
+     /*for patient*/
+#femox {
+
+    display:none;
+    
+      
+      }
+  .table,th, td{
+     
+      border: 1px solid black;
+      position: center;
+      }
+      th, td {
+      padding: 40px;
+      background-color: #1c2541;
+      color:white;
+      }
+ 
+     
+
+
+  
+
+.navbar-toggle { 
+	border-color: white; 
+	background-image: url(
+         
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='-3 0 40 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 

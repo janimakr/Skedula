@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- initializing width for devices -->
+  <!-- This gives the browser instructions on how to control the page's dimensions and scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">   <!--Initial zoom level specified by initial scale=1--> 
+  <title>Skedula</title>
+  <!-- Bringing in the Bootrstap CDN -->
+   <!-- Bringing in the Bootrstap CDN-Content Delivery Network; Basiacally adding Bootstrap Cdn to get the basic str instead of downloading and hosting bootstrap on the device -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+  <!-- linking the CSS -->
+  <link rel="stylesheet" type="text/css" href="./doctor.css">
+</head>
+<body>
+  <!-- initialize the navbar -->
+  <div class='design'><!--Class for modifying the nav bar ribbon-->
+    <!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(63, 158, 202);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+ 
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.form-popup {
+  
+        
+        display:none;
+        top:100px; 
+        right:60%;
+        left:40%;
+        width:300px;
+        position:fixed; 
+        z-index: 2000;
+        padding:30px; 
+        -webkit-box-shadow:0 0 10px rgba(0,0,0,0.4);
+        -moz-box-shadow:0 0 10px rgba(0,0,0,0.4); 
+        box-shadow:0 0 10px rgba(0,0,0,0.4)
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #3c93ad;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color:#2e748a;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+</style>
+
+   
+</head>
+<body>
+  <!-- initialize the navbar -->
+  <div class='design'><!--Class for modifying the nav bar ribbon-->
+  <nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <!-- No mabile display considered-->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="./receptionist.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Skedula</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!--Data Toggle define the kind of toggling to be included-->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Profile<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+                                              <!--Add a path to the reciptionst id from backend based of the reciptionst login-->
+                        <h3 Style="color:#0d6161" align="center">Doctor Name</h3>
+                        <h5 Style="color:#0d6161" align="center">Doctor ID</h5>
+
+          </ul>
+        </li>
+        <li><a href="../Login/loginPage.html">Logout</a></li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+    </nav>
+      
+
+
+
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+
+    <form >
+        <div class="container">
+          <h1>Reports</h1>
+          <hr>
+        <label for="time"><b>Patient Id</b></label>
+        <input type="chars"name="Uname" required  minlength="4" maxlength="8">
+      <button class="registerbtn1">View</button>
+     
+      <button class="registerbtn2"onclick="myFunctionq()" >Edit</button>
+      <div id="demox">
+        <body>
+          <div class="schedulebox"> <!--creating a class called login box-->
+          
+              
+              <form action="" method="">
+                 
+                  <input type="text" name="Uname" placeholder="Enter the changes you want to update" required  minlength="4" >
+                  <button class="registerbtn1" >Update</button>
+              </form>
+              
+          </div>
+        </body>
+        </html>
+        
+        </div>
+         
+          <script>
+            function myFunctionq() {
+              var x = document.getElementById("demox");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            } 
+            </script>
+           
+        <hr>   
+          <h2>Update Schedule</h2>
+        
+         
+          <hr>
+          <form action="" method="">
+          <label for="time"><b>Start Time</b></label>
+          <input type="time" placeholder="Enter Time" name="email" id="email" required>
+      
+          <label for="time"><b>End time</b></label>
+          <input type="time" placeholder="Enter Time" name="psw" id="psw" required>
+      
+          <label for="time"><b>Max</b></label>
+          <input type="number" placeholder="Maximum" name="psw-repeat" id="psw-repeat" min="0" max="10" required>
+          <hr>
+          <button type="submit" class="registerbtn3">Update the changes</button>
+          </form>
+        

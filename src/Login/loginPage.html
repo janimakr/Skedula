@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <title>Skedula Login </title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="./LoginStyle.css"> <!--linking the css component-->
+<body>
+    <div class="loginbox"> <!--creating a class called login box-->
+    <img src="./logofinal.png" alt="Logo" class="Logo"><!--creating a logo class to modify the logo-->
+        <h1>Welcome</h1>
+        <form action="../PatientUI/homepgwithpass.html" method="">
+            <p>User name</p>
+            <input type="text" name="Uname" placeholder="Enter Username" id="Username" required>
+            <p>Password</p>
+            <input type="password" name="pwd" pattern="[a-zA-Z0-9]+" placeholder="Enter password" title="Invalid Password" maxlength="10" required>
+            <input type="submit" name="Login" value="Login">
+            <a class="redirect" href="./ProfileSettingspage.html">New User ?</a>
+        </form>
+        <form action=""><nobr><a class="redirect1" href="./loginPageDoc.html">Doctor </a>
+            <a class="redirect2" href="./loginPageAdmin.html"> Admin </a>
+            <a class="redirect2" href="./loginPageRec.html"> Receptionist </a>
+            </nobr>
+        </form>
+    </div>
+</body
+</html>
+
+
+
