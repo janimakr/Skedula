@@ -36,4 +36,4 @@ Make sure all the tables are created in the database.Make sure that Apache and m
 ### Step 3:
 Navigate to the Applictaion folder in the IDE terminal/ command prompt and type "npm start" to start the electron based desktop app.
 
-#####NOTE:To check the database functionalities, navigate to the admin page as they are active only there and make sure to reenter database vaues to recheck.
+##### NOTE: To check the database functionalities, navigate to the admin page as they are active only there and make sure to reenter database vaues to recheck.
