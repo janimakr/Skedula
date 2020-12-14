@@ -14,14 +14,14 @@ The database used is  MySQL running on the Apache web sever.
 <p align="center">Most Updated version of the ER Diagram</p>  
 
 ### The Relational database model has the following tables:
-Doctor (DocID, pwd, f_name, s_name, Specialization, start time, end time, max today)   
-Receptionist (RID, pwd, f_name, s_name)  
-Patient (PatID, pwd, f_name, s_name, Addr_Line1, Addr_Line2) 
-Patient_mobile (PatID, mobile number)  
-Schedule (sID, Start time, PatID, DocID)  
-Doc_Sch (sID, DocID, Doc Report path)  
-Admin (aID, f_name, s_name)  
-AdminManipulate(aID, M_ID)  
+* Doctor (DocID, pwd, f_name, s_name, Specialization, start time, end time, max today)   
+* Receptionist (RID, pwd, f_name, s_name)  
+* Patient (PatID, pwd, f_name, s_name, Addr_Line1, Addr_Line2) 
+* Patient_mobile (PatID, mobile number)  
+* Schedule (sID, Start time, PatID, DocID)  
+* Doc_Sch (sID, DocID, Doc Report path)  
+* Admin (aID, f_name, s_name)  
+* AdminManipulate(aID, M_ID)  
 M_ID values are DocID or PatID or RID
 ## Pre-requisites:
 1. Node
