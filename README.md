@@ -1,5 +1,5 @@
 # Skedula
-Skedula is an Electron based desktop application for scheduling appointment in a Hospital. Skedula is designed to be a patient appointment scheduler which works on both online and offline mode (wherein the patient receives his/her appointment via the receptionist). 
+Skedula is an Electron based desktop application for scheduling appointment in a Hospital. Skedula is designed to be a patient appointment scheduler which works in both online and offline mode (wherein the patient receives his/her appointment via the receptionist). 
 The application caters to the following needs –
 * Allows the patients to schedule an appointment with the doctor/physician of their choice.
 * Provides the physician the ability to retrieve details of the patients (history of medical reports).
