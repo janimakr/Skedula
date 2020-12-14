@@ -14,13 +14,10 @@ Schedule (sID, Start time, PatID, DocID)
 Doc_Sch (sID, DocID, Doc Report path)  
 Admin (aID, f_name, s_name)  
 AdminManipulate(aID, M_ID)  
-
 M_ID values are DocID or PatID or RID
-
 ## Pre-requisites:
 1. Node
 2. Xaamp with the required database( table / trigger creation and insertion commands available in the ".src/Database" folder and also database available as a hmsdb.sql file) 
-
 ## Setting up the environment and opening the desktop app
 ### Step 1:
 Navigate to the Applictaion folder in the IDE terminal/ command prompt and type "npm install" to install all the dependecy files and node modules required for the appliacation as mentioned in the .JSON file.
