@@ -1,7 +1,7 @@
 # Skedula
 Skedula is an Electron based desktop application for scheduling appointment in a Hospital. Skedula is designed to be a patient appointment scheduler which works in both online and offline mode (wherein the patient receives his/her appointment via the receptionist). 
 The application caters to the following needs –
-* Allows the patients to schedule an appointment with the doctor/physician of their choice.
+* Allows patients to schedule an appointment with the doctor/physician of their choice.
 * Provides the physician the ability to retrieve details of the patients (history of medical reports).
 * Enables the patient to view their medical records and prescribed medicines all within a click of a button. 
 * In addition, doctors will also have full access to his/her schedule and the rights to modify it according to their availability. It aims to serve as platform that can bridge the communication gap between the hospital and its patients.
@@ -28,10 +28,10 @@ M_ID values are DocID or PatID or RID
 2. Xaamp with the required database( table / trigger creation and insertion commands available in the ".src/Database" folder and database is available as a hmsdb.sql file in the same folder) 
 ## Setting up the environment and opening the desktop app
 ### Step 1:
-Navigate to the Applictaion folder in the IDE terminal/ command prompt and type "npm install" to install all the dependecy files and node modules required for the appliacation as mentioned in the .JSON file.
+Navigate to the Application folder in the IDE terminal/ command prompt and type "npm install" to install all the dependency files and node modules required for the application as mentioned in the .JSON file.
 
 ### Step 2:
-Make sure all the tables are created in the database.Make sure that Apache and mysql servers are turned on from xaamp
+Make sure all the tables are created in the database. Make sure that Apache and MySQL servers are turned on from xaamp.
 
 ### Step 3:
 Navigate to the Applictaion folder in the IDE terminal/ command prompt and type "npm start" to start the electron based desktop app.
